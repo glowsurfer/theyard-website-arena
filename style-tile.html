@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Yard — Design System / Component Kit v3</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23191c1f'/%3E%3Cpath d='M20 12 33 34 7 34Z' fill='%23f2cd00'/%3E%3Crect x='37' y='14' width='20' height='20' fill='%2300519d'/%3E%3Ccircle cx='32' cy='47' r='10' fill='%23db0d20'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css?v=5560a96" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-sub">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- CANONICAL HEADER — this exact markup lives in index.html; copy from there. -->
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="logo-ph" href="index.html">THE YARD</a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__primary" aria-label="Primary">
+        <ul class="nav__menu" id="primary-nav">
+          <li class="nav__item">
+            <details class="nav__drop">
+              <summary>Programs</summary>
+              <div class="nav__panel nav__panel--wide">
+                <a href="recreational.html">Recreational Gymnastics <span class="mono">All 4 centres</span></a>
+                <a href="competitive.html">Competitive WAG / MAG <span class="mono">Jurong HP hub</span></a>
+                <a href="ninja.html">Ninja Zone <span class="mono">BT · Dempsey</span></a>
+                <a href="tumbling.html">Tumbling &amp; Trampoline <span class="mono">Jurong</span></a>
+                <a href="freestyle.html">Freestyle <span class="mono">Dover</span></a>
+                <a href="adult.html">Adult <span class="mono">Jurong · BT</span></a>
+                <a class="is-all" href="programs.html">All programs →</a>
+              </div>
+            </details>
+          </li>
+          <li class="nav__item"><a href="camps.html">Camps</a></li>
+          <li class="nav__item"><a href="parties.html">Parties</a></li>
+          <li class="nav__item"><a href="events.html">Events</a></li>
+          <li class="nav__item">
+            <details class="nav__drop">
+              <summary>Locations</summary>
+              <div class="nav__panel">
+                <a href="location-jurong.html">Jurong <span class="mono">HP hub</span></a>
+                <a href="location-bukit-timah.html">Bukit Timah <span class="mono">KAP Mall</span></a>
+                <a href="location-dempsey.html">Dempsey <span class="mono">Dempsey Hill</span></a>
+                <a href="location-dover.html">Dover <span class="mono">SPGG</span></a>
+                <a class="is-all" href="locations.html">All locations →</a>
+              </div>
+            </details>
+          </li>
+          <li class="nav__item">
+            <details class="nav__drop">
+              <summary>Business</summary>
+              <div class="nav__panel">
+                <a href="schools.html">Schools</a>
+                <a href="corporate.html">Corporate</a>
+                <a href="consultancy.html">Gym Consultancy</a>
+                <a href="performance.html">Athletic Performance</a>
+                <a class="is-all" href="partners.html">Partners &amp; clients →</a>
+              </div>
+            </details>
+          </li>
+          <li class="nav__item">
+            <details class="nav__drop">
+              <summary>About</summary>
+              <div class="nav__panel">
+                <a href="about.html">Our Story</a>
+                <a href="why-gymnastics.html">Why Gymnastics</a>
+                <a href="contact.html">Contact</a>
+              </div>
+            </details>
+          </li>
+          <li class="nav__item nav__login-item"><a class="nav__login" href="#" title="ClassCard member portal — external link to be wired">Member Login ↗</a></li>
+        </ul>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--gold btn--sm" href="index.html#book" data-magnetic>Book a Trial</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="hero hero--sub">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="wrap" style="padding-block:clamp(3rem,7vh,5rem)">
+      <span class="eyebrow gold">Design System · v3 — "Play to Podium" · Internal, noindex</span>
+      <h1>
+        <span class="line"><span class="line__inner">Component</span></span>
+        <span class="line"><span class="line__inner stroke stroke--gold">Kit v3</span></span>
+      </h1>
+      <p class="hero__lead lead">Charcoal gym-floor canvas, League Spartan display, Space Mono labels, gold/blue/red blocking, hand-drawn mascots. <strong>v3 rules:</strong> native scroll only (no Lenis, no pinning), reveals via IntersectionObserver + CSS, pathway = CSS scroll-snap, no backdrop-filter. Page builders use these classes and never write CSS. Copy the header/footer verbatim from <code>index.html</code>.</p>
+      <ul class="hero__facts">
+        <li><b>Reveal</b> data-reveal + .in</li>
+        <li><b>Strip</b> .pathway scroll-snap</li>
+        <li><b>No JS?</b> fully readable</li>
+        <li><b>Motion</b> respects reduced-motion</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 01 COLOUR + TYPE -->
+  <section class="section section--paper">
+    <div class="wrap">
+      <span class="eyebrow" data-reveal>01 — Tokens</span>
+      <h2 data-reveal>Colour &amp; type</h2>
+      <div class="swatches" style="margin-top:1.5rem" data-reveal>
+        <div class="swatch"><div class="swatch__chip" style="background:#191c1f"></div><b>Ink 3</b><code>--ink-3 #191c1f</code></div>
+        <div class="swatch"><div class="swatch__chip" style="background:#24282b"></div><b>Ink</b><code>--ink #24282b</code></div>
+        <div class="swatch"><div class="swatch__chip" style="background:#f2cd00"></div><b>Gold</b><code>--gold #f2cd00</code></div>
+        <div class="swatch"><div class="swatch__chip" style="background:#00519d"></div><b>Blue</b><code>--blue #00519d</code></div>
+        <div class="swatch"><div class="swatch__chip" style="background:#db0d20"></div><b>Red</b><code>--red #db0d20</code></div>
+        <div class="swatch"><div class="swatch__chip" style="background:#f7f7f5;border:1px solid #ddd"></div><b>Paper</b><code>--paper #f7f7f5</code></div>
+        <div class="swatch"><div class="swatch__chip" style="background:#d7d9d6"></div><b>Grey</b><code>--grey #d7d9d6</code></div>
+      </div>
+      <div style="margin-top:2.5rem" data-reveal>
+        <h1 style="margin-bottom:.2em">Display 900</h1>
+        <h3>Heading 800 <span class="stroke stroke--ink">+ stroke</span></h3>
+        <p class="lead">Lead paragraph — Noto Sans, 1.6 line height, 58ch max.</p>
+        <p class="mono">MONO LABEL · SPACE MONO · LETTERSPACED</p>
+        <span class="eyebrow gold">Eyebrow with square marker</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 BUTTONS / BADGES / IMG PLACEHOLDERS -->
+  <section class="section section--grey">
+    <div class="wrap">
+      <span class="eyebrow" data-reveal>02 — Actions &amp; atoms</span>
+      <h2 data-reveal>Buttons, badges, placeholders</h2>
+      <div class="btn-row" style="margin-top:1.5rem" data-reveal>
+        <a class="btn btn--gold" href="#">Gold primary</a>
+        <a class="btn btn--ink" href="#">Ink</a>
+        <a class="btn btn--blue" href="#">Blue</a>
+        <a class="btn btn--red" href="#">Red</a>
+        <a class="btn btn--ghost-ink" href="#">Ghost ink</a>
+        <a class="btn btn--gold btn--sm" href="#">Small</a>
+        <a class="btn btn--ink btn--lg" href="#">Large <span class="arr">→</span></a>
+      </div>
+      <p class="mono" style="margin-top:.8rem;opacity:.6">data-magnetic → magnetic hover (pointer:fine + motion OK only)</p>
+      <div class="tag-row" style="margin-top:1.4rem" data-reveal>
+        <span class="badge">Gold badge</span><span class="badge blue">Blue badge</span><span class="badge red">Red badge</span>
+        <span class="chip">chip</span><span class="price">$ price</span>
+      </div>
+      <div class="grid grid-3" style="margin-top:1.6rem" data-reveal>
+        <div class="imgph">Photo placeholder<small>.imgph — labelled stock suggestion</small></div>
+        <div class="imgph imgph--dark">Dark placeholder<small>.imgph--dark</small></div>
+        <div class="logo-wall__item">Client name<small>.logo-wall__item — approved logo files only</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 NAV / BREADCRUMB / HERO FACTS -->
+  <section class="section section--paper">
+    <div class="wrap">
+      <span class="eyebrow" data-reveal>03 — Wayfinding</span>
+      <h2 data-reveal>Nav, breadcrumb, program hero</h2>
+      <ul style="max-width:72ch">
+        <li><strong>Mega-menu header</strong>: the header at the top of this page is the live component — <code>.site-header &gt; .wrap.nav &gt; .logo-ph + .nav__toggle + nav.nav__primary &gt; ul.nav__menu &gt; li.nav__item &gt; details.nav__drop &gt; summary + .nav__panel</code>. Dropdowns are native <code>&lt;details&gt;</code> (click works with no JS); JS adds hover-open, one-at-a-time, click-away and Escape. Copy verbatim from <code>index.html</code>.</li>
+        <li><strong>Breadcrumb</strong>: <code>nav.breadcrumb[aria-label=Breadcrumb] &gt; ol &gt; li &gt; a</code>, current page gets <code>aria-current="page"</code>. Pair with BreadcrumbList JSON-LD.</li>
+        <li><strong>Program hero</strong>: <code>.hero.hero--sub</code> + breadcrumb + <code>.eyebrow</code> + <code>h1 &gt; .line &gt; .line__inner</code> + answer-first <code>.hero__lead</code> + <code>ul.hero__facts</code> chip list.</li>
+      </ul>
+      <nav class="breadcrumb" aria-label="Breadcrumb example" style="margin-top:1rem" data-reveal>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="#" aria-current="page">This page</a></li>
+        </ol>
+      </nav>
+      <ul class="hero__facts" style="margin-top:1rem" data-reveal>
+        <li style="border-color:rgba(25,28,31,.3);color:var(--ink)"><b style="color:var(--gold-deep)">Ages</b> 5 – 10</li>
+        <li style="border-color:rgba(25,28,31,.3);color:var(--ink)"><b style="color:var(--gold-deep)">Where</b> All 4 centres</li>
+      </ul>
+      <p class="mono" style="opacity:.55;margin-top:.6rem">.hero__facts styled for dark heroes — shown here on light for reference only.</p>
+    </div>
+  </section>
+
+  <!-- 04 REVEALS -->
+  <section class="section section--ink bg-grid">
+    <div class="wrap">
+      <span class="eyebrow gold" data-reveal>04 — Motion</span>
+      <h2 data-reveal>Reveal system</h2>
+      <div class="grid grid-4" style="margin-top:1.4rem">
+        <div class="benefit" data-reveal><h4>data-reveal</h4><p>Fade + rise (default).</p></div>
+        <div class="benefit" data-reveal="left" data-delay=".08"><h4>="left"</h4><p>Slides in from the left.</p></div>
+        <div class="benefit" data-reveal="right" data-delay=".16"><h4>="right"</h4><p>Slides in from the right.</p></div>
+        <div class="benefit" data-reveal="zoom" data-delay=".24"><h4>="zoom"</h4><p>Scales up. data-delay=".24" staggers.</p></div>
+      </div>
+      <p class="mono" style="opacity:.55;margin-top:1.2rem">IntersectionObserver adds .in once → CSS transition → unobserve. No JS = visible. Reduced-motion = visible, no transition. Count-ups: <b data-count="2016">2016</b> via [data-count] + optional [data-suffix].</p>
+    </div>
+  </section>
+
+  <!-- 05 PATHWAY STRIP -->
+  <section class="pathway">
+    <div class="wrap pathway__head">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow gold" data-reveal>05 — Pathway</span>
+          <h2 data-reveal>Scroll-snap strip</h2>
+        </div>
+        <p class="sec-note" data-reveal data-delay=".1"><code>.pathway &gt; .pathway__railwrap (.pathway__rail + .pathway__arrows) + .pathway__viewport &gt; .pathway__track &gt; .pcard</code>. Native overflow-x scroller with snap points; JS only paints the rail and wires [data-strip-prev]/[data-strip-next].</p>
+      </div>
+    </div>
+    <div class="pathway__railwrap">
+      <div class="pathway__rail" aria-hidden="true"><i></i></div>
+      <div class="pathway__arrows" aria-hidden="true">
+        <button class="pathway__arrow" data-strip-prev tabindex="-1" aria-label="Scroll back">←</button>
+        <button class="pathway__arrow" data-strip-next tabindex="-1" aria-label="Scroll forward">→</button>
+      </div>
+    </div>
+    <div class="pathway__viewport">
+      <div class="pathway__track" tabindex="0" aria-label="Example strip, horizontally scrollable">
+        <article class="pcard"><span class="pcard__num" aria-hidden="true">01</span><span class="pcard__ages">Meta line</span><h3>.pcard</h3><p>Base dark card with snap alignment.</p><a class="go" href="#">Link <span class="arr">→</span></a></article>
+        <article class="pcard pcard--comp"><span class="pcard__num" aria-hidden="true">02</span><span class="pcard__ages">Blue tint</span><h3>.pcard--comp</h3><p>Competitive flavour.</p><a class="go" href="#">Link <span class="arr">→</span></a></article>
+        <article class="pcard pcard--ninja"><span class="pcard__num" aria-hidden="true">03</span><span class="pcard__ages">Red tint</span><h3>.pcard--ninja</h3><p>Ninja flavour (use sparingly — smaller program).</p><a class="go" href="#">Link <span class="arr">→</span></a></article>
+        <article class="pcard pcard--cta"><h3>.pcard--cta</h3><p>Gold end-cap with a button.</p><a class="btn btn--ink" href="#">CTA</a></article>
+      </div>
+    </div>
+    <p class="pathway__hint mono" style="padding-bottom:1.4rem">Swipe / scroll sideways →</p>
+  </section>
+
+  <!-- 06 CONTENT COMPONENTS -->
+  <section class="section section--paper">
+    <div class="wrap">
+      <span class="eyebrow" data-reveal>06 — Content blocks</span>
+      <h2 data-reveal>Cards &amp; sections</h2>
+
+      <h4 style="margin-top:2rem">Feature duo (.feat / .feat--comp) — homepage Recreational + Competitive</h4>
+      <div class="grid grid-2">
+        <article class="feat"><div class="imgph">Photo</div><div class="feat__body"><div class="tag-row"><span class="badge">Badge</span></div><h3>.feat</h3><p>Light feature panel.</p><div class="feat__foot"><a class="btn btn--ink btn--sm" href="#">CTA</a></div></div></article>
+        <article class="feat feat--comp"><div class="imgph">Photo</div><div class="feat__body"><div class="tag-row"><span class="badge badge--dark">Badge</span></div><h3>.feat--comp</h3><p>Dark blue-tinted feature panel.</p><div class="feat__foot"><a class="btn btn--gold btn--sm" href="#">CTA</a></div></div></article>
+      </div>
+
+      <h4 style="margin-top:2.5rem">Benefits grid (.benefits / .benefits--4 &gt; .benefit)</h4>
+      <div class="benefits">
+        <div class="benefit"><span class="benefit__icon benefit__icon--tri" aria-hidden="true"></span><h4>Benefit</h4><p>Icon shapes: --tri / --sq / --dot.</p></div>
+        <div class="benefit"><span class="benefit__icon benefit__icon--sq" aria-hidden="true"></span><h4>Benefit</h4><p>Auto dark-styling inside .section--ink.</p></div>
+        <div class="benefit"><span class="benefit__icon benefit__icon--dot" aria-hidden="true"></span><h4>Benefit</h4><p>Also used for numbered explainers.</p></div>
+      </div>
+
+      <h4 style="margin-top:2.5rem">Level section (.level) + jump nav (.jumpnav) + availability (.avail)</h4>
+      <nav class="jumpnav" aria-label="Example jump nav"><a href="#">Level one</a><a href="#">Level two</a></nav>
+      <article class="level">
+        <div class="level__body">
+          <h3>Level name</h3>
+          <div class="level__meta"><span><i></i>Ages 5–10</span><span><i></i>1 hour</span></div>
+          <p>Two-column anchored section: copy left, photo + availability + CTA right. Collapses on mobile.</p>
+        </div>
+        <div class="level__side">
+          <ul class="avail"><span class="avail__title">Runs at</span>
+            <li><b>Jurong</b> <span class="mono">✓</span></li>
+            <li><b>Bukit Timah</b> <span class="mono">✓</span></li>
+            <li class="is-off"><b>Dempsey</b> <span class="mono">not offered</span></li>
+          </ul>
+          <a class="btn btn--gold btn--sm" href="#">Book a trial</a>
+        </div>
+      </article>
+      <p class="mono" style="opacity:.55">Availability lists must match _spec/classcard_availability.md — never assert a regular class the matrix doesn't confirm. Compact alternative: .acc (details accordion).</p>
+
+      <h4 style="margin-top:2.5rem">Camp cards (.camp-card) + event tickets (.ticket)</h4>
+      <div class="grid grid-3">
+        <div class="camp-card"><div class="camp-card__band"><span>Band</span><span>Meta</span></div><div class="camp-card__body"><h4>.camp-card</h4><p>Band colours: default gold, .blue, .red, .ink.</p><span class="camp-card__centres">Centres line</span></div></div>
+        <article class="ticket"><div class="ticket__date"><b>April</b><span class="mono">Annual</span></div><hr class="ticket__divider" /><div class="ticket__body"><h4>.ticket</h4><p style="font-size:.93rem;opacity:.8;margin:0">Event card with notched divider.</p><a class="go" href="#" style="margin-top:.6rem">Link <span class="arr">→</span></a></div></article>
+        <article class="ticket ticket--archive"><div class="ticket__date"><b>2018–</b><span class="mono">Archive</span></div><hr class="ticket__divider" /><div class="ticket__body"><h4>.ticket--archive</h4><p style="font-size:.93rem;opacity:.8;margin:0">Blue date band for past events.</p></div></article>
+      </div>
+
+      <h4 style="margin-top:2.5rem">Package cards (.pkg) — parties</h4>
+      <div class="grid grid-3">
+        <div class="pkg"><h3>Mini</h3><span class="pkg__guests">Up to 8 guests</span><div class="pkg__price">$—<small>prices shown at booking</small></div><ul><li>Included item</li><li class="is-not">Not included item</li></ul><a class="btn btn--red btn--sm" href="#">Book</a></div>
+        <div class="pkg pkg--featured"><span class="pkg__flag">Most popular</span><h3>Mega</h3><span class="pkg__guests">9–16 guests</span><div class="pkg__price">$—<small>prices shown at booking</small></div><ul><li>Included item</li></ul><a class="btn btn--red btn--sm" href="#">Book</a></div>
+        <div class="pkg"><h3>Mighty</h3><span class="pkg__guests">17–24 guests</span><div class="pkg__price">$—<small>prices shown at booking</small></div><ul><li>Included item</li></ul><a class="btn btn--red btn--sm" href="#">Book</a></div>
+      </div>
+
+      <h4 style="margin-top:2.5rem">Location card (.loc-card) + contact list (.contact-list) + loc rows (.loc-list/.loc-row on dark)</h4>
+      <div class="grid grid-3">
+        <a class="loc-card" href="#"><div class="imgph">Centre photo</div><div class="loc-card__body"><h3>Centre name</h3><address>Street address line</address><span class="go">Centre page <span class="arr">→</span></span></div></a>
+        <div><ul class="contact-list">
+          <li><span class="mono">Phone</span><a href="#">+65 0000 0000</a></li>
+          <li><span class="mono">WhatsApp</span><a href="#">+65 0000 0000</a></li>
+          <li><span class="mono">Email</span><a href="#">centre@theyard.com.sg</a></li>
+        </ul></div>
+        <div class="kicker-note">.kicker-note — inline callout for cross-references ("Not at this centre: …").</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 B2B + QUOTES + FAQ + NEXT LINKS -->
+  <section class="section section--ink3 bg-grid">
+    <div class="wrap">
+      <span class="eyebrow gold" data-reveal>07 — B2B &amp; support</span>
+      <h2 data-reveal>Capability, quotes, FAQ</h2>
+
+      <h4 style="margin-top:1.6rem;color:var(--white)">Capability block (.cap-block) + enquiry CTA (.enquiry-cta)</h4>
+      <div class="cap-block">
+        <div>
+          <span class="eyebrow gold">B2B line</span>
+          <h3>Honest capability heading</h3>
+          <p style="opacity:.85">For Schools / Consultancy / Performance: state real capability, never invented case studies.</p>
+          <ul><li>Capability point</li><li>Capability point</li></ul>
+        </div>
+        <div class="enquiry-cta">
+          <p>One-line pitch for the enquiry.</p>
+          <a class="btn btn--gold" href="mailto:enquiries@theyard.com.sg">Enquire →</a>
+        </div>
+      </div>
+
+      <div class="grid grid-3" style="margin-top:2rem">
+        <blockquote class="quote quote--gold"><p>Testimonial quote card.</p><cite>— .quote--gold / --blue / --red</cite></blockquote>
+        <div>
+          <div class="faq faq--dark">
+            <details><summary>CSS-only FAQ accordion <span class="faq__x" aria-hidden="true"></span></summary><div><p>.faq (light) / .faq--dark — native details/summary, zero JS. Mirror content in FAQPage JSON-LD.</p></div></details>
+          </div>
+        </div>
+        <a class="next-link" href="#"><span class="mono">Onward link</span><b>.next-link</b><span>Grid of 3 (.next-links) closes every page — no dead ends.</span></a>
+      </div>
+
+      <h4 style="margin-top:2rem;color:var(--white)">Stats band (.stats/.stat) · trust strip (.trustbar) · marquee · footer</h4>
+      <p style="opacity:.8;max-width:70ch">See index.html for the live stats band, factline (crawlable quick facts), gold marquee and the CANONICAL FOOTER (legal links: live privacy-policy, liability-waiver, child-safe-sport URLs + member-portal pointer). Copy header/footer verbatim; only add <code>aria-current="page"</code> to the active nav link.</p>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot-bottom" style="border-top:0">
+      <span>Internal style tile v3 · noindex · The Yard "Play to Podium"</span>
+      <span><a href="index.html">← Back to homepage</a></span>
+    </div>
+  </footer>
+
+  <script defer src="js/main.js?v=5560a96"></script>
+
+</body>
+</html>

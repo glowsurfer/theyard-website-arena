@@ -1,0 +1,48 @@
+# The Yard — theyard.sg
+# All crawlers welcome, including AI / LLM search crawlers.
+
+User-agent: *
+Allow: /
+
+# Explicitly allow major AI crawlers (generative-search discovery)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Internal design reference — not for indexing (also carries meta noindex)
+User-agent: *
+Disallow: /style-tile.html
+
+Sitemap: https://www.theyard.sg/sitemap.xml
+
+# LLM-readable site summary
+# https://www.theyard.sg/llms.txt

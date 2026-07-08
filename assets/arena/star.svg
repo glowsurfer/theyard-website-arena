@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="currentColor" aria-hidden="true">
+  <defs>
+    <pattern id="ht" width="7" height="7" patternUnits="userSpaceOnUse">
+      <circle cx="3.5" cy="3.5" r="1.7" fill="currentColor"/>
+    </pattern>
+    <clipPath id="c"><path d="M 150.0,8.0 L 165.0,108.7 L 227.1,58.1 L 188.1,128.0 L 285.9,126.0 L 193.3,157.6 L 245.3,205.0 L 178.3,183.7 L 199.6,286.3 L 150.0,194.0 L 109.6,260.9 L 121.7,183.7 L 33.1,217.5 L 106.7,157.6 L 29.9,128.8 L 111.9,128.0 L 60.0,42.8 L 135.0,108.7 Z"/></clipPath>
+  </defs>
+  <path d="M 150.0,8.0 L 165.0,108.7 L 227.1,58.1 L 188.1,128.0 L 285.9,126.0 L 193.3,157.6 L 245.3,205.0 L 178.3,183.7 L 199.6,286.3 L 150.0,194.0 L 109.6,260.9 L 121.7,183.7 L 33.1,217.5 L 106.7,157.6 L 29.9,128.8 L 111.9,128.0 L 60.0,42.8 L 135.0,108.7 Z" opacity="0.92"/>
+  <g clip-path="url(#c)">
+    <rect x="0" y="0" width="150" height="300" fill="url(#ht)" opacity="0.9"/>
+    <rect x="150" y="0" width="150" height="300" fill="currentColor"/>
+  </g>
+</svg>

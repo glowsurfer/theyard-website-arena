@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Yard — Recreational &amp; Competitive Gymnastics in Singapore | 4 Centres</title>
+  <meta name="description" content="The Yard is a Singapore gymnastics club with four centres — Jurong, Bukit Timah, Dempsey and Dover. Recreational classes from 18 months at every centre, a selection-based competitive WAG/MAG pathway at the Jurong High Performance hub, plus holiday camps, birthday parties and events." />
+  <link rel="canonical" href="https://www.theyard.sg/" />
+  <meta name="theme-color" content="#05070a" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Yard" />
+  <meta property="og:title" content="The Yard — Recreational &amp; Competitive Gymnastics in Singapore" />
+  <meta property="og:description" content="Recreational gymnastics from 18 months at all four Singapore centres, plus a selection-based competitive WAG/MAG pathway, camps, parties and events." />
+  <meta property="og:url" content="https://www.theyard.sg/" />
+  <meta property="og:image" content="https://www.theyard.sg/assets/illustrations/tagline.png" />
+  <meta property="og:image:alt" content="Hand-drawn lettering reading Move, Play, Grow, Belong" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Yard — Recreational &amp; Competitive Gymnastics in Singapore" />
+  <meta name="twitter:description" content="Recreational gymnastics from 18 months at all four Singapore centres, plus a selection-based competitive WAG/MAG pathway, camps, parties and events." />
+  <meta name="twitter:image" content="https://www.theyard.sg/assets/illustrations/tagline.png" />
+
+  <!-- Font performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23191c1f'/%3E%3Cpath d='M20 12 33 34 7 34Z' fill='%23f2cd00'/%3E%3Crect x='37' y='14' width='20' height='20' fill='%2300519d'/%3E%3Ccircle cx='32' cy='47' r='10' fill='%23db0d20'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css?v=arena01" />
+
+  <!-- Flag JS availability early (reveal styles are gated on html.js) -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- ================= Structured data (SEO + AI/LLM search) ================= -->
+  <!-- Organization + one LocalBusiness (SportsActivityLocation) per centre.
+       TODO before launch: confirm geo lat/lng + openingHoursSpecification per centre. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "@id": "https://www.theyard.sg/#organization",
+    "name": "The Yard",
+    "legalName": "People In Motion Pte. Ltd.",
+    "url": "https://www.theyard.sg/",
+    "slogan": "Move · Play · Belong · Grow",
+    "foundingDate": "2016",
+    "founder": {"@type": "Person", "name": "Rosanna Trigg"},
+    "description": "The Yard is a Singapore gymnastics club with four centres — Jurong, Bukit Timah, Dempsey and Dover. Recreational gymnastics runs from 18 months at every centre; a selection-based competitive WAG/MAG pathway trains at the Jurong High Performance hub. Ninja Zone runs at Bukit Timah and Dempsey, Tumbling & Trampoline at Jurong, and adult sessions at Jurong and Bukit Timah, plus holiday camps, birthday parties and events.",
+    "areaServed": {"@type": "Country", "name": "Singapore"},
+    "contactPoint": {"@type": "ContactPoint", "contactType": "customer service", "telephone": "+65 8089 1440", "description": "WhatsApp main line for The Yard — class, camp, party and general enquiries", "areaServed": "SG", "availableLanguage": "English"},
+    "sameAs": [
+      "https://www.facebook.com/TheYardGymnastics",
+      "https://www.instagram.com/theyardgymnastics/"
+    ],
+    "department": [
+      {"@type":"SportsActivityLocation","name":"The Yard Jurong","url":"https://www.theyard.sg/location-jurong.html","telephone":"+65 6816 8022","address":{"@type":"PostalAddress","streetAddress":"1 Venture Avenue, #03-03A, Perennial Business City","addressLocality":"Singapore","postalCode":"608521","addressCountry":"SG"}},
+      {"@type":"SportsActivityLocation","name":"The Yard Bukit Timah","url":"https://www.theyard.sg/location-bukit-timah.html","telephone":"+65 6914 9669","address":{"@type":"PostalAddress","streetAddress":"9 King Albert Park, #B1-01, KAP Mall","addressLocality":"Singapore","postalCode":"598332","addressCountry":"SG"}},
+      {"@type":"SportsActivityLocation","name":"The Yard Dempsey","url":"https://www.theyard.sg/location-dempsey.html","telephone":"+65 6914 9660","address":{"@type":"PostalAddress","streetAddress":"72 Loewen Road, Dempsey Hill","addressLocality":"Singapore","postalCode":"248828","addressCountry":"SG"}},
+      {"@type":"SportsActivityLocation","name":"The Yard Dover","url":"https://www.theyard.sg/location-dover.html","telephone":"+65 6914 9662","address":{"@type":"PostalAddress","streetAddress":"1010 Dover Road, #01-01, SPGG","addressLocality":"Singapore","postalCode":"139658","addressCountry":"SG"}}
+    ]
+  }
+  </script>
+
+  <!-- Programs as Courses (availability matches the ClassCard matrix) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "The Yard programs",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"item":{"@type":"Course","name":"Gym Tots","url":"https://www.theyard.sg/recreational.html#gym-tots","description":"Parent-and-child gymnastics for toddlers, offered at all four Yard centres in Singapore.","provider":{"@id":"https://www.theyard.sg/#organization"},"audience":{"@type":"PeopleAudience","suggestedMinAge":1.5,"suggestedMaxAge":3}}},
+      {"@type":"ListItem","position":2,"item":{"@type":"Course","name":"KinderTots","url":"https://www.theyard.sg/recreational.html#kindertots","description":"A child's first independent gymnastics class, offered at all four Yard centres.","provider":{"@id":"https://www.theyard.sg/#organization"},"audience":{"@type":"PeopleAudience","suggestedMinAge":3,"suggestedMaxAge":4}}},
+      {"@type":"ListItem","position":3,"item":{"@type":"Course","name":"FUNdamentals","url":"https://www.theyard.sg/recreational.html#fundamentals","description":"Core recreational gymnastics for ages 5–10 at all four Yard centres, following a 20-skill Skills Matrix.","provider":{"@id":"https://www.theyard.sg/#organization"},"audience":{"@type":"PeopleAudience","suggestedMinAge":5,"suggestedMaxAge":10}}},
+      {"@type":"ListItem","position":4,"item":{"@type":"Course","name":"Warriors & Senior Warriors","url":"https://www.theyard.sg/recreational.html#warriors","description":"Advanced recreational gymnastics. Warriors runs at Bukit Timah and Dover; Senior Warriors (10–16) at Dover.","provider":{"@id":"https://www.theyard.sg/#organization"},"audience":{"@type":"PeopleAudience","suggestedMinAge":5,"suggestedMaxAge":16}}},
+      {"@type":"ListItem","position":5,"item":{"@type":"Course","name":"Competitive WAG / MAG","url":"https://www.theyard.sg/competitive.html","description":"Selection-based Women's and Men's Artistic Gymnastics pathway on SGLP/USAG standards, with the High Performance hub at The Yard Jurong.","provider":{"@id":"https://www.theyard.sg/#organization"}}},
+      {"@type":"ListItem","position":6,"item":{"@type":"Course","name":"Ninja Zone","url":"https://www.theyard.sg/ninja.html","description":"Gymnastics-parkour obstacle training at Bukit Timah and Dempsey only.","provider":{"@id":"https://www.theyard.sg/#organization"},"audience":{"@type":"PeopleAudience","suggestedMinAge":3,"suggestedMaxAge":10}}},
+      {"@type":"ListItem","position":7,"item":{"@type":"Course","name":"Tumbling & Trampoline","url":"https://www.theyard.sg/tumbling.html","description":"Floor, vault and tumble-track program for ages 10–16 at The Yard Jurong only.","provider":{"@id":"https://www.theyard.sg/#organization"},"audience":{"@type":"PeopleAudience","suggestedMinAge":10,"suggestedMaxAge":16}}},
+      {"@type":"ListItem","position":8,"item":{"@type":"Course","name":"Adult Gymnastics","url":"https://www.theyard.sg/adult.html","description":"Adult Open Session at Jurong and Adult Foundation Gymnastics at Bukit Timah, ages 16+.","provider":{"@id":"https://www.theyard.sg/#organization"},"audience":{"@type":"PeopleAudience","suggestedMinAge":16}}}
+    ]
+  }
+  </script>
+
+  <!-- FAQ (mirrors the on-page FAQ section exactly) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"What ages does The Yard cater for?","acceptedAnswer":{"@type":"Answer","text":"Classes start at 18 months with Gym Tots and run through KinderTots (3–4), FUNdamentals (5–10), advanced recreational levels and teen programs such as Senior Warriors (10–16, Dover) and Tumbling & Trampoline (10–16, Jurong). Adults 16+ train at Jurong (Open Session) and Bukit Timah (Adult Foundation Gymnastics)."}},
+      {"@type":"Question","name":"Which programs run at which Yard centre?","acceptedAnswer":{"@type":"Answer","text":"Recreational gymnastics (Gym Tots, KinderTots, FUNdamentals) runs at all four centres. Warriors runs at Bukit Timah and Dover; Senior Warriors and boys' classes at Dover, with boys' classes also at Dempsey. Ninja Zone runs at Bukit Timah and Dempsey only. Tumbling & Trampoline runs at Jurong only. Adult sessions run at Jurong and Bukit Timah. The competitive WAG/MAG pathway is based at the Jurong High Performance hub."}},
+      {"@type":"Question","name":"How do I book a trial class?","acceptedAnswer":{"@type":"Answer","text":"Book a trial for any recreational class through the centre's booking portal, or WhatsApp the centre team and they will find the right class and time. Competitive squads start with a free assessment arranged with the centre team instead of a trial."}},
+      {"@type":"Question","name":"Where are The Yard's centres located?","acceptedAnswer":{"@type":"Answer","text":"The Yard has four centres across Singapore: Jurong (1 Venture Avenue, #03-03A, Perennial Business City, 608521), Bukit Timah (9 King Albert Park, #B1-01, KAP Mall, 598332), Dempsey (72 Loewen Road, Dempsey Hill, 248828) and Dover (1010 Dover Road, #01-01, SPGG, 139658)."}},
+      {"@type":"Question","name":"How does the competitive pathway work?","acceptedAnswer":{"@type":"Answer","text":"Entry to The Yard's competitive Women's and Men's Artistic Gymnastics squads is by assessment and invitation, not open enrolment. The assessment is free of charge. Squads train 6–24 hours per week on SGLP and USAG standards over an August–July season, with the High Performance hub at The Yard Jurong."}},
+      {"@type":"Question","name":"Do you host birthday parties, camps and events?","acceptedAnswer":{"@type":"Answer","text":"Yes. Birthday parties run at all four centres — a 90-minute coach-led session plus 30 minutes in a decorated party room. Holiday camps run in every Singapore school-holiday window (March, June, September, December), with gymnastics camps at all four centres. The Yard also hosts the Lion City Classic and Diamond Classic meets at Jurong and an annual Christmas Show."}}
+    ]
+  }
+  </script>
+</head>
+<body class="page-home">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================================================================
+       CANONICAL HEADER — copy this <header> verbatim onto every page.
+       (Only change: add aria-current="page" to the active link.)
+       ================================================================ -->
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="logo-ph" href="index.html">THE YARD</a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__primary" aria-label="Primary">
+        <ul class="nav__menu" id="primary-nav">
+          <li class="nav__item">
+            <details class="nav__drop">
+              <summary>Programs</summary>
+              <div class="nav__panel nav__panel--wide">
+                <a href="recreational.html">Recreational Gymnastics <span class="mono">All 4 centres</span></a>
+                <a href="competitive.html">Competitive WAG / MAG <span class="mono">Jurong HP hub</span></a>
+                <a href="ninja.html">Ninja Zone <span class="mono">BT · Dempsey</span></a>
+                <a href="tumbling.html">Tumbling &amp; Trampoline <span class="mono">Jurong</span></a>
+                <a href="freestyle.html">Freestyle <span class="mono">Dover</span></a>
+                <a href="adult.html">Adult <span class="mono">Jurong · BT</span></a>
+                <a class="is-all" href="programs.html">All programs →</a>
+              </div>
+            </details>
+          </li>
+          <li class="nav__item"><a href="camps.html">Camps</a></li>
+          <li class="nav__item"><a href="parties.html">Parties</a></li>
+          <li class="nav__item"><a href="events.html">Events</a></li>
+          <li class="nav__item">
+            <details class="nav__drop">
+              <summary>Locations</summary>
+              <div class="nav__panel">
+                <a href="location-jurong.html">Jurong <span class="mono">HP hub</span></a>
+                <a href="location-bukit-timah.html">Bukit Timah <span class="mono">KAP Mall</span></a>
+                <a href="location-dempsey.html">Dempsey <span class="mono">Dempsey Hill</span></a>
+                <a href="location-dover.html">Dover <span class="mono">SPGG</span></a>
+                <a class="is-all" href="locations.html">All locations →</a>
+              </div>
+            </details>
+          </li>
+          <li class="nav__item">
+            <details class="nav__drop">
+              <summary>Business</summary>
+              <div class="nav__panel">
+                <a href="schools.html">Schools</a>
+                <a href="corporate.html">Corporate</a>
+                <a href="consultancy.html">Gym Consultancy</a>
+                <a href="performance.html">Athletic Performance</a>
+                <a class="is-all" href="partners.html">Partners &amp; clients →</a>
+              </div>
+            </details>
+          </li>
+          <li class="nav__item">
+            <details class="nav__drop">
+              <summary>About</summary>
+              <div class="nav__panel">
+                <a href="about.html">Our Story</a>
+                <a href="why-gymnastics.html">Why Gymnastics</a>
+                <a href="contact.html">Contact</a>
+              </div>
+            </details>
+          </li>
+          <!-- TODO: real ClassCard member-portal URL -->
+          <li class="nav__item nav__login-item"><a class="nav__login" href="contact.html#book" title="Member portal — choose your centre">Member Login ↗</a></li>
+        </ul>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--gold btn--sm" href="index.html#book" data-magnetic>Book a Trial</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <!-- ============ HERO — UNDER THE LIGHTS (cinematic arena) ============ -->
+  <section class="arena" aria-label="The Yard — recreational and competitive gymnastics in Singapore">
+    <div class="arena__bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="arena__copy">
+        <p class="arena__eyebrow">Under the lights · Since 2016</p>
+        <h1>This is<br/><span class="c-gold">gymnastics<span class="c-red">.</span></span></h1>
+        <!-- Answer-first sentence: written to be quotable by AI search verbatim -->
+        <p class="arena__lead">The Yard is a Singapore gymnastics club with four centres — <strong>Jurong, Bukit Timah, Dempsey and Dover</strong>. Recreational classes from 18 months at every centre, and a selection-based competitive WAG/MAG pathway at our Jurong High Performance hub.</p>
+        <div class="btn-row">
+          <a class="btn btn--gold btn--lg" href="#book" data-magnetic>Book a Trial <span class="arr">→</span></a>
+          <a class="btn btn--ghost" href="#lights" data-magnetic>Move · Play · Belong · Grow ↓</a>
+        </div>
+        <div class="arena__meta">
+          <span><b>4</b> centres islandwide</span>
+          <span><b>WAG · MAG</b> pathway</span>
+          <span><b>FIG</b>-certified apparatus</span>
+        </div>
+      </div>
+      <!-- Halftone star-burst framing a cut-out athlete (the reference motif) -->
+      <div class="starframe">
+        <span class="starframe__star" aria-hidden="true"></span>
+        <div class="starframe__ph">
+          <b>Hero photo slot</b>
+          Cut-out competition athlete goes here — real Yard squad photography, as in the blue-star reference
+        </div>
+      </div>
+    </div>
+    <p class="arena__scroll" aria-hidden="true">Scroll ↓</p>
+  </section>
+
+  <!-- kinetic tagline marquee -->
+  <div class="marquee marquee--gold" aria-hidden="true">
+    <div class="marquee__inner">
+      <div class="marquee__row">
+        <b>Move</b><span class="shape shape--tri"></span><b>Play</b><span class="shape shape--sq"></span>
+        <b>Belong</b><span class="shape shape--dot"></span><b>Grow</b><span class="shape shape--tri"></span>
+        <b>Move</b><span class="shape shape--sq"></span><b>Play</b><span class="shape shape--dot"></span>
+        <b>Belong</b><span class="shape shape--tri"></span><b>Grow</b><span class="shape shape--sq"></span>
+      </div>
+      <div class="marquee__row">
+        <b>Move</b><span class="shape shape--tri"></span><b>Play</b><span class="shape shape--sq"></span>
+        <b>Belong</b><span class="shape shape--dot"></span><b>Grow</b><span class="shape shape--tri"></span>
+        <b>Move</b><span class="shape shape--sq"></span><b>Play</b><span class="shape shape--dot"></span>
+        <b>Belong</b><span class="shape shape--tri"></span><b>Grow</b><span class="shape shape--sq"></span>
+      </div>
+    </div>
+  </div>
+  <p class="vh">Move. Play. Belong. Grow.</p>
+
+  <!-- ============ THE FOUR LIGHTS (duotone spotlit tiles) ============ -->
+  <section class="section section--night" id="lights" aria-label="The Yard Way — four pillars">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow" data-reveal>The Yard Way</span>
+          <h2 data-reveal>Four ways to<br/>shine<span class="c-red">.</span></h2>
+        </div>
+        <p class="sec-note" data-reveal data-delay=".1">One club, four pillars — every child, squad and family finds their light. Move is where it starts; Play, Belong and Grow are where it goes.</p>
+      </div>
+      <div class="lights">
+        <a class="light light--gold" href="#programs" data-reveal>
+          <span class="duo duo--gold" aria-hidden="true"><img src="assets/arena/arena.svg" alt="" width="480" height="600" loading="lazy" /></span>
+          <span class="light__grade" aria-hidden="true"></span>
+          <span class="light__no">The Yard Way · 01</span>
+          <span class="light__word">Move</span>
+          <p class="light__sub">Strong, confident movers for life — recreational &amp; competitive.</p>
+          <span class="light__go">Programs ↓</span>
+        </a>
+        <a class="light light--red" href="#parties" data-reveal data-delay=".06">
+          <span class="duo duo--red" aria-hidden="true"><img src="assets/arena/arena.svg" alt="" width="480" height="600" loading="lazy" /></span>
+          <span class="light__grade" aria-hidden="true"></span>
+          <span class="light__no">The Yard Way · 02</span>
+          <span class="light__word">Play</span>
+          <p class="light__sub">Powered by fun — parties, camps and competition nights.</p>
+          <span class="light__go">What's on ↓</span>
+        </a>
+        <a class="light light--blue" href="#locations" data-reveal data-delay=".12">
+          <span class="duo duo--blue" aria-hidden="true"><img src="assets/arena/arena.svg" alt="" width="480" height="600" loading="lazy" /></span>
+          <span class="light__grade" aria-hidden="true"></span>
+          <span class="light__no">The Yard Way · 03</span>
+          <span class="light__word">Belong</span>
+          <p class="light__sub">Four centres, one community — every journey welcome.</p>
+          <span class="light__go">Locations ↓</span>
+        </a>
+        <a class="light light--ink" href="#pathway" data-reveal data-delay=".18">
+          <span class="duo duo--tri" aria-hidden="true"><img src="assets/arena/arena.svg" alt="" width="480" height="600" loading="lazy" /></span>
+          <span class="light__grade" aria-hidden="true"></span>
+          <span class="light__no">The Yard Way · 04</span>
+          <span class="light__word">Grow</span>
+          <p class="light__sub">Skills, confidence &amp; character — the pathway and beyond.</p>
+          <span class="light__go">The pathway ↓</span>
+        </a>
+      </div>
+      <div class="scoreline" data-reveal>
+        <div><b>2016</b><span>Coaching since</span></div>
+        <div><b data-count="4">4</b><span>Singapore centres</span></div>
+        <div><b>20,000</b><span>sq ft arena</span></div>
+        <div><b>★★★★★</b><span>Loved by parents</span></div>
+      </div>
+    </div>
+    <div class="factline">
+      <div class="wrap">
+        <!-- Crawlable quick-facts for search engines & LLMs -->
+        <p><strong>Quick facts:</strong> The Yard is operated by People In Motion Pte. Ltd. and was founded in Singapore in 2016 by Rosanna Trigg. Recreational gymnastics (Gym Tots, KinderTots, FUNdamentals) runs at all four centres; Ninja Zone runs at Bukit Timah and Dempsey; Tumbling &amp; Trampoline at Jurong; adult sessions at Jurong and Bukit Timah. Competitive squads enter by free assessment and invitation. Every centre is nut-free, uses FIG-certified apparatus and has a parent viewing area. Find The Yard on <a href="https://www.facebook.com/TheYardGymnastics">Facebook</a> and <a href="https://www.instagram.com/theyardgymnastics/">Instagram</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRI-COLOUR WASH STRIP (the third reference image) ============ -->
+  <section class="washstrip" aria-label="Move, play, belong, grow">
+    <div class="duo duo--tri" aria-hidden="true"><img src="assets/arena/arena.svg" alt="" width="1920" height="1080" loading="lazy" /><span class="duo__grade"></span></div>
+    <div class="wrap">
+      <p class="washstrip__k">Move · Play · Belong · Grow<span class="dot">.</span></p>
+      <p class="washstrip__sub">This is gymnastics — this is The Yard.</p>
+    </div>
+  </section>
+
+  <!-- ============ PRIORITY 1: RECREATIONAL + COMPETITIVE (featured duo) ============ -->
+  <section class="section section--paper" id="programs">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow gold" data-reveal>01 — Our two core programs</span>
+          <h2 data-reveal>Start with play.<br/>Go as far as<br/>they want<span class="c-red">.</span></h2>
+        </div>
+        <p class="sec-note" data-reveal data-delay=".1">Recreational gymnastics is the backbone — it runs at all four centres. The competitive pathway is where it can lead. Everything else at The Yard hangs off these two.</p>
+      </div>
+      <div class="grid grid-2">
+        <article class="feat" data-reveal>
+          <div class="imgph">Photo: recreational class on floor &amp; beam<small>suggested stock → real centre photo</small></div>
+          <div class="feat__body">
+            <div class="tag-row">
+              <span class="badge">18 months – 16 yrs</span>
+              <span class="badge blue">All 4 centres</span>
+            </div>
+            <h3>Recreational Gymnastics</h3>
+            <p>The athletic foundation for every sport your child will ever do. Gym Tots (18&nbsp;months–3), KinderTots (3–4) and FUNdamentals (5–10) run at <strong>every centre</strong>, progressing to Warriors, Senior Warriors and beyond — with skills medalled Bronze, Silver and Gold three times a year.</p>
+            <div class="feat__foot">
+              <a class="btn btn--ink" href="recreational.html" data-magnetic>Explore the levels <span class="arr">→</span></a>
+              <a class="btn btn--ghost-ink btn--sm" href="#book">Book a trial</a>
+            </div>
+          </div>
+        </article>
+        <article class="feat feat--comp" data-reveal data-delay=".12">
+          <div class="imgph">Photo: squad athlete on bars<small>suggested stock → real centre photo</small></div>
+          <div class="feat__body">
+            <div class="tag-row">
+              <span class="badge--dark badge blue">By selection</span>
+              <span class="badge--dark badge">Jurong HP hub</span>
+            </div>
+            <h3>Competitive WAG / MAG</h3>
+            <p>A selection-based artistic gymnastics pathway on SGLP and USAG standards — squads train 6–24 hours a week over an August–July season, compete at the Lion City Classic and Diamond Classic, and tour internationally. Entry starts with a <strong>free assessment</strong>.</p>
+            <div class="feat__foot">
+              <a class="btn btn--gold" href="competitive.html" data-magnetic>How the pathway works <span class="arr">→</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECONDARY PROGRAMS ============ -->
+  <section class="section section--grey">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow" data-reveal>02 — Also at The Yard</span>
+          <h2 data-reveal>More ways to move</h2>
+        </div>
+        <p class="sec-note" data-reveal data-delay=".1">Specialist programs at selected centres — each links to its own page with levels, benefits and booking.</p>
+      </div>
+      <div class="grid grid-4">
+        <a class="card" href="ninja.html" data-reveal>
+          <div class="card__top red"></div>
+          <div class="card__body">
+            <span class="mono" style="opacity:.6">Ages 3–10</span>
+            <h4>Ninja Zone</h4>
+            <p style="font-size:.92rem;opacity:.8;margin:0">Gymnastics × parkour obstacle training with serious energy.</p>
+            <span class="mono" style="color:var(--red-deep);font-size:.64rem">Bukit Timah · Dempsey</span>
+            <span class="go">Ninja Zone <span class="arr">→</span></span>
+          </div>
+        </a>
+        <a class="card" href="tumbling.html" data-reveal data-delay=".08">
+          <div class="card__top gold"></div>
+          <div class="card__body">
+            <span class="mono" style="opacity:.6">Ages 10–16</span>
+            <h4>Tumbling &amp; Trampoline</h4>
+            <p style="font-size:.92rem;opacity:.8;margin:0">Round-offs to aerials on floor, tumble track and trampoline.</p>
+            <span class="mono" style="color:var(--gold-deep);font-size:.64rem">Jurong only</span>
+            <span class="go">Tumbling <span class="arr">→</span></span>
+          </div>
+        </a>
+        <a class="card" href="freestyle.html" data-reveal data-delay=".16">
+          <div class="card__top blue"></div>
+          <div class="card__body">
+            <span class="mono" style="opacity:.6">Ages 7+</span>
+            <h4>Freestyle</h4>
+            <p style="font-size:.92rem;opacity:.8;margin:0">Gymnastics meets acrobatic self-expression. Camps at Dover.</p>
+            <span class="mono" style="color:var(--blue);font-size:.64rem">Dover</span>
+            <span class="go">Freestyle <span class="arr">→</span></span>
+          </div>
+        </a>
+        <a class="card" href="adult.html" data-reveal data-delay=".24">
+          <div class="card__top blue"></div>
+          <div class="card__body">
+            <span class="mono" style="opacity:.6">Ages 16+</span>
+            <h4>Adult Gymnastics</h4>
+            <p style="font-size:.92rem;opacity:.8;margin:0">Open Session at Jurong, Adult Foundation class at Bukit Timah.</p>
+            <span class="mono" style="color:var(--blue);font-size:.64rem">Jurong · Bukit Timah</span>
+            <span class="go">Adult <span class="arr">→</span></span>
+          </div>
+        </a>
+      </div>
+      <p class="mono" style="margin-top:1.6rem;opacity:.6" data-reveal>Not sure where your child fits? <a href="programs.html" style="text-decoration:underline">See all programs</a> or <a href="contact.html" style="text-decoration:underline">ask the team</a>.</p>
+    </div>
+  </section>
+
+  <!-- ============ THE PATHWAY (native scroll-snap strip) ============ -->
+  <section class="pathway" id="pathway" aria-label="The Yard pathway from toddler play to competitive gymnastics">
+    <div class="wrap pathway__head">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow gold" data-reveal>03 — One journey</span>
+          <h2 data-reveal>The pathway<span class="c-red">.</span></h2>
+        </div>
+        <p class="sec-note" data-reveal data-delay=".1">From first steps on a spring floor to the competition podium — a coach calls every level move. Progress is the point, not pace.</p>
+      </div>
+    </div>
+    <div class="pathway__railwrap">
+      <div class="pathway__rail" aria-hidden="true"><i></i></div>
+      <div class="pathway__arrows" aria-hidden="true">
+        <button class="pathway__arrow" data-strip-prev tabindex="-1" aria-label="Scroll pathway back">←</button>
+        <button class="pathway__arrow" data-strip-next tabindex="-1" aria-label="Scroll pathway forward">→</button>
+      </div>
+    </div>
+    <div class="pathway__viewport">
+      <div class="pathway__track" tabindex="0" aria-label="Program pathway, horizontally scrollable">
+        <article class="pcard">
+          <span class="pcard__num" aria-hidden="true">01</span>
+          <span class="pcard__ages">18 mo – 3 yrs · All 4 centres</span>
+          <h3>Gym Tots</h3>
+          <p>Parent-and-child play: obstacle courses, balance and listening skills together on the gym floor.</p>
+          <div class="imgph imgph--dark">Photo: toddler class<small>suggested stock → real photo</small></div>
+          <a class="go" href="recreational.html#gym-tots">Details <span class="arr">→</span></a>
+        </article>
+        <article class="pcard">
+          <span class="pcard__num" aria-hidden="true">02</span>
+          <span class="pcard__ages">3 – 4 yrs · All 4 centres</span>
+          <h3>KinderTots</h3>
+          <p>Their first independent class — bars, beam, vault and floor through games and stations.</p>
+          <div class="imgph imgph--dark">Photo: kinder class<small>suggested stock → real photo</small></div>
+          <a class="go" href="recreational.html#kindertots">Details <span class="arr">→</span></a>
+        </article>
+        <article class="pcard">
+          <span class="pcard__num" aria-hidden="true">03</span>
+          <span class="pcard__ages">5 – 10 yrs · All 4 centres</span>
+          <h3>FUNdamentals</h3>
+          <p>The core class: vault, bars, beam and floor on a 20-skill Skills Matrix, medalled three times a year.</p>
+          <div class="imgph imgph--dark">Photo: recreational class<small>suggested stock → real photo</small></div>
+          <a class="go" href="recreational.html#fundamentals">Details <span class="arr">→</span></a>
+        </article>
+        <article class="pcard">
+          <span class="pcard__num" aria-hidden="true">04</span>
+          <span class="pcard__ages">By assessment · BT + Dover</span>
+          <h3>Warriors</h3>
+          <p>Advanced recreational: 90-minute sessions where children stop doing gymnastics and start owning it. Senior Warriors (10–16) at Dover.</p>
+          <a class="go" href="recreational.html#warriors">Details <span class="arr">→</span></a>
+        </article>
+        <article class="pcard">
+          <span class="pcard__num" aria-hidden="true">05</span>
+          <span class="pcard__ages">Pathway levels · Ask the team</span>
+          <h3>Heroes &amp; Legends</h3>
+          <p>The peak of recreational gymnastics — handsprings, aerials and walkovers at competition-level intensity.</p>
+          <a class="go" href="recreational.html#pathway-levels">Details <span class="arr">→</span></a>
+        </article>
+        <article class="pcard pcard--comp">
+          <span class="pcard__num" aria-hidden="true">06</span>
+          <span class="pcard__ages">By selection · Jurong HP hub</span>
+          <h3>Competitive WAG / MAG</h3>
+          <p>Free assessment → invitation → squad. SGLP/USAG levels 1–10, national meets and international tours.</p>
+          <div class="imgph imgph--dark">Photo: competitive squad<small>suggested stock → real photo</small></div>
+          <a class="go" href="competitive.html">The pathway <span class="arr">→</span></a>
+        </article>
+        <article class="pcard pcard--cta">
+          <h3>Your turn.</h3>
+          <p>Trial classes at all four centres. Join any time — no experience needed.</p>
+          <a class="btn btn--ink" href="#book" data-magnetic>Book a trial <span class="arr">→</span></a>
+        </article>
+      </div>
+    </div>
+    <p class="pathway__hint mono" style="padding-bottom:1.4rem">Swipe / scroll the strip sideways →</p>
+  </section>
+
+  <!-- ============ PARTIES (distinct section) ============ -->
+  <section class="section section--paper" id="parties">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow red" data-reveal>04 — Birthday parties</span>
+          <h2 data-reveal>The party they'll<br/>still talk about</h2>
+        </div>
+        <p class="sec-note" data-reveal data-delay=".1">Real coaches, Olympic-grade apparatus and a decorated party room — at all four centres.</p>
+      </div>
+      <div class="grid grid-2" style="align-items:center">
+        <div data-reveal>
+          <div class="imgph" style="min-height:280px">Photo: birthday party on the gym floor<small>suggested stock → real party photo</small></div>
+        </div>
+        <div data-reveal data-delay=".1">
+          <p class="lead" style="max-width:46ch">A 90-minute coach-led session on the gym floor, then 30 minutes of cake in a decorated party room — bunting and tableware in your two chosen colours, goody bags, e-invitations and a fridge for the cake.</p>
+          <ul style="padding-left:1.15rem;margin:1rem 0 1.4rem">
+            <li>Three packages — <strong>Mini, Mega and Mighty</strong> (up to 24 guests)</li>
+            <li>Gymnastics or ninja themes, by centre</li>
+            <li>Weekend slots at every centre; book 4+ weeks ahead</li>
+            <li>Nut-free venue · parties are self-catered</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn--red" href="parties.html" data-magnetic>Packages &amp; booking <span class="arr">→</span></a>
+            <a class="btn btn--ghost-ink btn--sm" href="parties.html#faq">Party FAQs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAMPS (distinct section) ============ -->
+  <section class="section section--ink bg-grid" id="camps">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow gold" data-reveal>05 — Holiday camps</span>
+          <h2 data-reveal>School's out.<br/>The Yard isn't.</h2>
+        </div>
+        <p class="sec-note" data-reveal data-delay=".1">5-day camps (Mon–Fri, 3 hrs/day) in every Singapore school holiday — March, June, September, December. Spots fill fast.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="camp-card" data-reveal>
+          <div class="camp-card__band"><span>Gymnastics</span><span>Ages 3–10</span></div>
+          <div class="camp-card__body">
+            <h4>Gymnastics Camps</h4>
+            <p>KinderTots and FUNdamentals age bands — skills, games and big-apparatus play.</p>
+            <span class="camp-card__centres">All four centres</span>
+          </div>
+        </div>
+        <div class="camp-card" data-reveal data-delay=".08">
+          <div class="camp-card__band red"><span>Ninja</span><span>Ages 3–10</span></div>
+          <div class="camp-card__body">
+            <h4>Ninja Zone Camps</h4>
+            <p>Obstacle courses, rig work and ninja games all week.</p>
+            <span class="camp-card__centres">Bukit Timah · Dempsey</span>
+          </div>
+        </div>
+        <div class="camp-card" data-reveal data-delay=".16">
+          <div class="camp-card__band blue"><span>High performance</span><span>Squad level</span></div>
+          <div class="camp-card__body">
+            <h4>HP Competitive Camps</h4>
+            <p>WAG and MAG intensives at the Jurong High Performance hub.</p>
+            <span class="camp-card__centres">Jurong</span>
+          </div>
+        </div>
+        <div class="camp-card" data-reveal data-delay=".24">
+          <div class="camp-card__band ink"><span>Freestyle</span><span>Ages 7+</span></div>
+          <div class="camp-card__body">
+            <h4>Freestyle Camp</h4>
+            <p>Acrobatic movement and creative flow for a full week.</p>
+            <span class="camp-card__centres">Dover</span>
+          </div>
+        </div>
+      </div>
+      <div class="btn-row" style="margin-top:2rem" data-reveal>
+        <a class="btn btn--gold" href="camps.html" data-magnetic>This holiday's camps <span class="arr">→</span></a>
+        <span class="mono" style="opacity:.55">Camps are a great first taste of The Yard — term classes are where progression happens.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS (distinct section) ============ -->
+  <section class="section section--paper" id="events">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow" data-reveal>06 — Competitions &amp; shows</span>
+          <h2 data-reveal>Event season<br/>never really ends</h2>
+        </div>
+        <p class="sec-note" data-reveal data-delay=".1">The Yard hosts sanctioned meets at the Jurong arena and an all-centres Christmas Show every December.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="ticket" data-reveal>
+          <div class="ticket__date"><b>April</b><span class="mono">Annual · Jurong</span></div>
+          <hr class="ticket__divider" />
+          <div class="ticket__body">
+            <h4>Lion City Classic</h4>
+            <p style="font-size:.93rem;opacity:.8;margin:0">Sanctioned WAG Levels 2–10 / MAG Foundation–Level 5 meet, open to clubs across Singapore.</p>
+            <a class="go" href="events.html" style="margin-top:.6rem">Event details <span class="arr">→</span></a>
+          </div>
+        </article>
+        <article class="ticket" data-reveal data-delay=".12">
+          <div class="ticket__date"><b>Dec 6</b><span class="mono">2026 · All centres</span></div>
+          <hr class="ticket__divider" />
+          <div class="ticket__body">
+            <h4>Annual Christmas Show</h4>
+            <p style="font-size:.93rem;opacity:.8;margin:0">A family-friendly showcase of every programme across all four centres.</p>
+            <a class="go" href="events.html" style="margin-top:.6rem">Show details <span class="arr">→</span></a>
+          </div>
+        </article>
+        <article class="ticket ticket--archive" data-reveal data-delay=".24">
+          <div class="ticket__date"><b>2018–</b><span class="mono">Archive</span></div>
+          <hr class="ticket__divider" />
+          <div class="ticket__body">
+            <h4>Past events</h4>
+            <p style="font-size:.93rem;opacity:.8;margin:0">Christmas Shows, Lion City Classics, Diamond Classics and Ninja Games — years of them.</p>
+            <a class="go" href="events.html#archive" style="margin-top:.6rem">Browse the archive <span class="arr">→</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="mono" style="margin-top:1.6rem;opacity:.6" data-reveal>Results and highlights land on <a href="https://www.instagram.com/theyardgymnastics/" style="text-decoration:underline">Instagram</a> first — follow along.</p>
+    </div>
+  </section>
+
+  <!-- ============ LOCATIONS ============ -->
+  <section class="section section--ink3 bg-grid" id="locations">
+    <span class="ghost-word" aria-hidden="true">Singapore</span>
+    <div class="wrap" style="position:relative;z-index:1">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow gold" data-reveal>07 — Locations</span>
+          <h2 data-reveal>Four centres<br/>across Singapore</h2>
+        </div>
+        <!-- Quotable location summary for AI search -->
+        <p class="sec-note" data-reveal data-delay=".1">The Yard operates four gymnastics centres in Singapore: Jurong at Perennial Business City, Bukit Timah at KAP Mall, Dempsey at Dempsey Hill and Dover at SPGG. No centre is "the main one" — each has its own programs and personality.</p>
+      </div>
+      <div class="loc-list">
+        <a class="loc-row" href="location-jurong.html" data-reveal>
+          <span class="loc-row__idx">01</span>
+          <span class="loc-row__name">Jurong <span class="badge badge--dark loc-row__tag">20,000 sq ft arena</span></span>
+          <div class="loc-row__addr"><address>1 Venture Avenue, #03-03A,<br/>Perennial Business City</address><span class="mono">S608521 · HP hub · Tumbling · Adult open gym</span></div>
+          <span class="loc-row__go">Centre page</span>
+        </a>
+        <a class="loc-row" href="location-bukit-timah.html" data-reveal>
+          <span class="loc-row__idx">02</span>
+          <span class="loc-row__name">Bukit Timah</span>
+          <div class="loc-row__addr"><address>9 King Albert Park, #B1-01,<br/>KAP Mall</address><span class="mono">S598332 · Ninja rig · Party room · Adult class</span></div>
+          <span class="loc-row__go">Centre page</span>
+        </a>
+        <a class="loc-row" href="location-dempsey.html" data-reveal>
+          <span class="loc-row__idx">03</span>
+          <span class="loc-row__name">Dempsey</span>
+          <div class="loc-row__addr"><address>72 Loewen Road,<br/>Dempsey Hill</address><span class="mono">S248828 · Ninja · Boys classes · Free parking</span></div>
+          <span class="loc-row__go">Centre page</span>
+        </a>
+        <a class="loc-row" href="location-dover.html" data-reveal>
+          <span class="loc-row__idx">04</span>
+          <span class="loc-row__name">Dover</span>
+          <div class="loc-row__addr"><address>1010 Dover Road, #01-01,<br/>SPGG</address><span class="mono">S139658 · Warriors &amp; Senior Warriors · Boys · Freestyle camps</span></div>
+          <span class="loc-row__go">Centre page</span>
+        </a>
+      </div>
+      <div class="btn-row" style="margin-top:2rem" data-reveal>
+        <a class="btn btn--ghost" href="locations.html" data-magnetic>Compare all four centres <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARTNERS / CLIENTS + TESTIMONIALS ============ -->
+  <section class="section section--grey" id="partners">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow red" data-reveal>08 — Trusted by</span>
+          <h2 data-reveal>Companies &amp; families</h2>
+        </div>
+        <p class="sec-note" data-reveal data-delay=".1">Corporate teams have built, balanced and bonded at The Yard. Schools and clubs partner with us too — <a href="partners.html" style="text-decoration:underline">see partners &amp; clients</a>.</p>
+      </div>
+      <!-- Client logos: labelled placeholders — approved logo files only, never recreated -->
+      <div class="logo-wall" data-reveal>
+        <div class="logo-wall__item">LinkedIn<small>client logo placeholder — approved file only</small></div>
+        <div class="logo-wall__item">TP ICAP<small>client logo placeholder — approved file only</small></div>
+        <div class="logo-wall__item">Chanel<small>client logo placeholder — approved file only</small></div>
+      </div>
+      <div class="grid grid-3" style="margin-top:2.5rem">
+        <blockquote class="quote quote--gold" data-reveal><p>My daughter went from shy to fearless. The coaches are incredible.</p><cite>— Parent, Bukit Timah</cite></blockquote>
+        <blockquote class="quote quote--blue" data-reveal data-delay=".12"><p>The competitive squad gave my son real structure and goals.</p><cite>— Parent, Jurong</cite></blockquote>
+        <blockquote class="quote quote--red" data-reveal data-delay=".24"><p>Best birthday party we've ever thrown. The kids didn't want to leave.</p><cite>— Parent, Dempsey</cite></blockquote>
+      </div>
+      <div class="btn-row" style="margin-top:2rem" data-reveal>
+        <a class="btn btn--ghost-ink" href="corporate.html" data-magnetic>Corporate team building <span class="arr">→</span></a>
+        <a class="btn btn--ghost-ink" href="schools.html" data-magnetic>For schools <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT TEASER ============ -->
+  <section class="section section--paper" id="about">
+    <div class="wrap">
+      <div class="grid grid-2" style="align-items:center">
+        <div data-reveal>
+          <span class="eyebrow">09 — Our story</span>
+          <h2>"Progress is<br/>the point,<br/>not pace<span class="c-red">."</span></h2>
+          <p class="lead">Founded in 2016 by international coach <strong>Rosanna Trigg</strong>, The Yard has grown into four centres and one philosophy: foundations before sophistication, and a child who leaves stronger, more coordinated and more confident — whether or not they stay in gymnastics forever.</p>
+          <div class="btn-row" style="margin-top:1.4rem">
+            <a class="btn btn--ink" href="about.html" data-magnetic>Our story <span class="arr">→</span></a>
+            <a class="btn btn--ghost-ink" href="why-gymnastics.html" data-magnetic>Why gymnastics?</a>
+          </div>
+        </div>
+        <div data-reveal data-delay=".12">
+          <div class="imgph" style="min-height:320px">Photo: founder / coaching team<small>real photography required — no stock for people claims</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ (mirrored in FAQPage JSON-LD) ============ -->
+  <section class="section section--paper" id="faq" style="padding-top:0">
+    <div class="wrap wrap--narrow">
+      <span class="eyebrow" data-reveal>10 — Good to know</span>
+      <h2 data-reveal>Questions, answered</h2>
+      <div class="faq" data-reveal>
+        <details>
+          <summary>What ages does The Yard cater for? <span class="faq__x" aria-hidden="true"></span></summary>
+          <div><p>Classes start at 18 months with Gym Tots and run through KinderTots (3–4), FUNdamentals (5–10), advanced recreational levels and teen programs such as Senior Warriors (10–16, Dover) and Tumbling &amp; Trampoline (10–16, Jurong). Adults 16+ train at Jurong (Open Session) and Bukit Timah (Adult Foundation Gymnastics).</p></div>
+        </details>
+        <details>
+          <summary>Which programs run at which centre? <span class="faq__x" aria-hidden="true"></span></summary>
+          <div><p>Recreational gymnastics (Gym Tots, KinderTots, FUNdamentals) runs at all four centres. Warriors runs at Bukit Timah and Dover; Senior Warriors and boys' classes at Dover, with boys' classes also at Dempsey. Ninja Zone runs at Bukit Timah and Dempsey only. Tumbling &amp; Trampoline runs at Jurong only. Adult sessions run at Jurong and Bukit Timah. The competitive WAG/MAG pathway is based at the Jurong High Performance hub.</p></div>
+        </details>
+        <details>
+          <summary>How do I book a trial class? <span class="faq__x" aria-hidden="true"></span></summary>
+          <div><p>Book a trial for any recreational class through the centre's booking portal, or WhatsApp the centre team and they'll find the right class and time. Competitive squads start with a free assessment arranged with the centre team instead of a trial.</p></div>
+        </details>
+        <details>
+          <summary>Where are your centres located? <span class="faq__x" aria-hidden="true"></span></summary>
+          <div><p>Four centres across Singapore: Jurong (1 Venture Avenue, #03-03A, Perennial Business City, 608521), Bukit Timah (9 King Albert Park, #B1-01, KAP Mall, 598332), Dempsey (72 Loewen Road, Dempsey Hill, 248828) and Dover (1010 Dover Road, #01-01, SPGG, 139658).</p></div>
+        </details>
+        <details>
+          <summary>How does the competitive pathway work? <span class="faq__x" aria-hidden="true"></span></summary>
+          <div><p>Entry to our competitive Women's and Men's Artistic Gymnastics squads is by assessment and invitation, not open enrolment — and the assessment is free. Squads train 6–24 hours per week on SGLP and USAG standards over an August–July season, with the High Performance hub at Jurong. <a href="competitive.html">Read how selection works →</a></p></div>
+        </details>
+        <details>
+          <summary>Do you host birthday parties, camps and events? <span class="faq__x" aria-hidden="true"></span></summary>
+          <div><p>Yes. Birthday parties run at all four centres — a 90-minute coach-led session plus 30 minutes in a decorated party room. Holiday camps run in every school-holiday window (March, June, September, December). We also host the Lion City Classic and Diamond Classic at Jurong and an annual Christmas Show. See <a href="parties.html">Parties</a>, <a href="camps.html">Camps</a> and <a href="events.html">Events</a>.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING CTA ============ -->
+  <section class="section section--gold bg-grid--ink book-cta" id="book">
+    <div class="wrap" style="position:relative;z-index:1">
+      <span class="eyebrow" style="color:var(--ink)" data-reveal>11 — Ready to start?</span>
+      <h2 class="hugeline" data-reveal>Book a <span class="stroke stroke--ink">trial</span> class.</h2>
+      <p class="lead" data-reveal data-delay=".08">Pick your centre — the team will help you find the right class for your child's age and stage. Trials are available for all recreational programs; the exact trial fee is shown at booking. Prefer to talk? WhatsApp a centre directly.</p>
+      <div class="btn-row" data-reveal data-delay=".14" style="margin-top:1.6rem">
+        <!-- TODO: per-centre ClassCard booking deep-links (placeholder “#” until wired) -->
+        <a class="btn btn--ink btn--lg" href="https://book.jurong.theyard.sg/" target="_blank" rel="noopener" data-magnetic title="ClassCard — The Yard Jurong">Book at Jurong ↗</a>
+        <a class="btn btn--ghost-ink" href="https://book.bukittimah.theyard.sg/" target="_blank" rel="noopener" data-magnetic title="ClassCard — The Yard Bukit Timah">Bukit Timah ↗</a>
+        <a class="btn btn--ghost-ink" href="https://app.iclasspro.com/portal/theyard/classes?location=2" target="_blank" rel="noopener" data-magnetic title="Parent portal — The Yard Dempsey (moving to ClassCard)">Dempsey ↗</a>
+        <a class="btn btn--ghost-ink" href="https://app.iclasspro.com/portal/theyard/classes?location=4" target="_blank" rel="noopener" data-magnetic title="Parent portal — The Yard Dover (moving to ClassCard)">Dover ↗</a>
+      </div>
+      <div class="btn-row" data-reveal data-delay=".18" style="margin-top:.8rem">
+        <a class="btn btn--gold btn--sm" href="https://wa.me/6580891440" title="WhatsApp The Yard — main line">WhatsApp us — main line</a>
+        <a class="btn btn--ghost-ink btn--sm" href="https://wa.me/6587493709">WhatsApp Jurong</a>
+        <a class="btn btn--ghost-ink btn--sm" href="https://wa.me/6589528017">WhatsApp Bukit Timah</a>
+        <a class="btn btn--ghost-ink btn--sm" href="https://wa.me/6589498693">WhatsApp Dempsey</a>
+        <a class="btn btn--ghost-ink btn--sm" href="https://wa.me/6588059607">WhatsApp Dover</a>
+      </div>
+      <div class="trustline mono" data-reveal data-delay=".22">
+        <span>▲ Coaching since 2016</span><span>■ 4 centres</span><span>● Nut-free, safeguarding-led club</span>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ================================================================
+       CANONICAL FOOTER — copy this <footer> verbatim onto every page.
+       ================================================================ -->
+  <footer class="site-footer">
+    <div class="wrap foot-grid">
+      <div>
+        <span class="logo-ph">THE YARD</span>
+        <img class="foot-tag" style="margin-top:2rem" src="assets/illustrations/tagline.png" alt="Move, play, grow, belong — hand-drawn tagline" width="280" height="112" />
+        <p style="font-size:.9rem;opacity:.75">Recreational &amp; competitive gymnastics for kids,<br/>plus ninja, tumbling and adult programs —<br/>four centres across Singapore.</p>
+        <p class="mono" style="font-size:.62rem;opacity:.55">Founded by Rosanna Trigg · Est. 2016<br/>People In Motion Pte. Ltd. (UEN 201535741C)</p>
+        <p class="mono" style="margin:.9rem 0 0;font-size:.72rem"><a href="https://wa.me/6580891440" title="WhatsApp The Yard — main line">WhatsApp main line · +65 8089 1440</a></p>
+        <div class="social">
+          <a href="https://www.facebook.com/TheYardGymnastics" aria-label="The Yard on Facebook">fb</a>
+          <a href="https://www.instagram.com/theyardgymnastics/" aria-label="The Yard on Instagram">ig</a>
+        </div>
+      </div>
+      <nav aria-label="Programs">
+        <h4>Programs</h4>
+        <ul class="foot-links">
+          <li><a href="recreational.html">Recreational gymnastics</a></li>
+          <li><a href="competitive.html">Competitive WAG/MAG</a></li>
+          <li><a href="ninja.html">Ninja Zone</a></li>
+          <li><a href="tumbling.html">Tumbling &amp; Trampoline</a></li>
+          <li><a href="freestyle.html">Freestyle</a></li>
+          <li><a href="adult.html">Adult</a></li>
+          <li><a href="programs.html">All programs</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Visit and what's on">
+        <h4>Visit</h4>
+        <ul class="foot-links">
+          <li><a href="location-jurong.html">Jurong</a></li>
+          <li><a href="location-bukit-timah.html">Bukit Timah</a></li>
+          <li><a href="location-dempsey.html">Dempsey</a></li>
+          <li><a href="location-dover.html">Dover</a></li>
+          <li><a href="camps.html">Holiday camps</a></li>
+          <li><a href="parties.html">Birthday parties</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Company and legal">
+        <h4>Company</h4>
+        <ul class="foot-links">
+          <li><a href="about.html">Our story</a> · <a href="why-gymnastics.html">Why gymnastics</a></li>
+          <li><a href="schools.html">Schools</a> · <a href="corporate.html">Corporate</a></li>
+          <li><a href="consultancy.html">Consultancy</a> · <a href="performance.html">Performance</a></li>
+          <li><a href="partners.html">Partners &amp; clients</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://www.theyard.sg/privacy-policy/">Privacy Policy</a> · <a href="https://www.theyard.sg/liability-waiver/">Liability Waiver</a></li>
+          <li><a href="https://www.theyard.sg/child-safe-sport-commitment/">Child Safe Sport Commitment</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© The Yard · People In Motion Pte. Ltd. — placeholder logo &amp; photography, swap before production</span>
+      <span>Full club policies are available to members in the member portal</span>
+    </div>
+  </footer>
+
+  <!-- sticky mobile booking bar -->
+  <div class="book-bar">
+    <b>Trial classes at all 4 centres</b>
+    <a class="btn btn--gold btn--sm" href="#book">Book now</a>
+  </div>
+
+  <script defer src="js/main.js?v=arena01"></script>
+
+</body>
+</html>

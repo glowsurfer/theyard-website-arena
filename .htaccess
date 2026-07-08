@@ -1,0 +1,9 @@
+# Review-site caching: HTML/txt/xml always revalidate; assets are version-busted (?v=sha)
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|txt|xml)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(css|js|png|jpg|jpeg|svg|webp|ico)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
