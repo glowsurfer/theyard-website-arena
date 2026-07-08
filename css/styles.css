@@ -1563,3 +1563,79 @@ html:not(.js) .nav__menu:focus-within { transform: translateY(0); visibility: vi
 .light--red{box-shadow:inset 0 4px 0 var(--red)}
 .light--gold{box-shadow:inset 0 4px 0 var(--gold)}
 .light--ink{box-shadow:inset 0 4px 0 #fff}
+
+/* =========================================================================
+   CONCEPT 03 REBUILD — FULL NIGHT ("Under the Lights", site-wide)
+   One switch: <body data-night>. Every light-surface component flips into
+   the broadcast register — deep arena blacks, spotlit sub-heroes with the
+   light streak + halftone star, duotone placeholders, gold/ice-blue text
+   accents. The gold booking CTA stays bright: the payoff moment.
+   ========================================================================= */
+body[data-night]{background:#070a0f;color:#e6ebf2;
+  --hairline-l:rgba(255,255,255,.1);
+  --red-deep:#ff8089;   /* text-accent vars are text-only by design — */
+  --gold-deep:#ecc900;  /* re-tuned for dark ground (AA on #11161d)   */
+  --blue-deep:#5fb0ff;
+  --gold-tint:rgba(242,205,0,.12);--blue-tint:rgba(0,81,157,.25);--red-tint:rgba(219,13,32,.18)}
+
+/* ---- surfaces ---- */
+body[data-night] .section--paper{background:#0a0e14;color:#e6ebf2}
+body[data-night] .section--grey{background:#0e1319;color:#e6ebf2}
+body[data-night] .stats{background:#0b1016;color:#e6ebf2;border-bottom-color:rgba(255,255,255,.08)}
+body[data-night] .factline{background:#0a0e14;border-top:1px solid rgba(255,255,255,.06)}
+body[data-night] .factline p{color:#a8b4c2}
+body[data-night] .factline a{color:var(--gold)}
+
+/* ---- cards & panels ---- */
+body[data-night] :is(.card,.quote,.ticket,.camp-card,.pkg,.loc-card,.aud-card,.feat,.benefit,.cap-block--light,.logo-wall__item,.timetable){background:#11161d;color:#e6ebf2;border-color:rgba(255,255,255,.09);box-shadow:0 14px 44px rgba(0,0,0,.5)}
+body[data-night] :is(.card,.ticket,.camp-card,.pkg,.loc-card,.feat):hover{box-shadow:0 26px 70px rgba(0,0,0,.65)}
+body[data-night] .ticket{--notch-bg:#0a0e14}
+body[data-night] .cap-block--light h3{color:#fff}
+body[data-night] .cap-block--light ul{color:rgba(230,235,242,.85)}
+body[data-night] .enquiry-cta--light{border-color:rgba(255,255,255,.3)}
+body[data-night] .pkg--featured{border-color:var(--gold)}
+body[data-night] .timetable th{background:#05070a}
+body[data-night] .timetable td{border-bottom-color:rgba(255,255,255,.08)}
+body[data-night] .timetable tr:hover td{background:rgba(242,205,0,.08)}
+body[data-night] .kicker-note{background:rgba(0,81,157,.2);color:#bcd8f5}
+body[data-night] .loc-card .imgph{border-bottom-color:rgba(255,255,255,.2)}
+
+/* ---- photo placeholders: duotone night ---- */
+body[data-night] .imgph{background:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 12px,transparent 12px 24px),linear-gradient(160deg,#0d1a2e 0%,#11161d 70%);border-color:rgba(255,255,255,.28);color:#c6d2e0}
+
+/* ---- text accents & links ---- */
+body[data-night] :is(.eyebrow,.c-blue,.go,.camp-card__centres){color:#5fb0ff}
+body[data-night] .eyebrow.gold{color:var(--gold)}
+body[data-night] .eyebrow.red{color:#ff8089}
+body[data-night] .faq summary:hover{color:#5fb0ff}
+body[data-night] .contact-list a{color:var(--gold)}
+body[data-night] :is(.faq,.acc,.level){border-color:rgba(255,255,255,.12)}
+body[data-night] :is(.faq details,.acc details){border-bottom-color:rgba(255,255,255,.12)}
+body[data-night] :is(.avail,.contact-list li){background:transparent}
+body[data-night] .avail{background:#0d1218;border-color:rgba(255,255,255,.12)}
+body[data-night] .avail li{border-top-color:rgba(255,255,255,.12)}
+body[data-night] :is(.pkg ul li,.contact-list li){border-top-color:rgba(255,255,255,.12)}
+
+/* ---- badges ---- */
+body[data-night] .badge{background:rgba(255,255,255,.08);color:#e6ebf2;border-color:rgba(255,255,255,.18)}
+body[data-night] .badge.blue{background:rgba(0,81,157,.3);color:#9cc8f2;border-color:rgba(95,176,255,.35)}
+
+/* ---- forms ---- */
+body[data-night] .field input,body[data-night] .field select,body[data-night] .field textarea{background:#10151c;color:#e6ebf2;border-color:rgba(255,255,255,.22)}
+body[data-night] .field input:focus,body[data-night] .field select:focus,body[data-night] .field textarea:focus{border-color:#5fb0ff;box-shadow:0 0 0 4px rgba(95,176,255,.18)}
+
+/* ---- spotlit sub-heroes: light streak + halftone star ---- */
+body[data-night] .hero--sub{position:relative;background:#070a0f}
+body[data-night] .hero--sub .hero__bg{opacity:.5}
+body[data-night] .hero--sub::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:
+  radial-gradient(90% 60% at 62% 0%,rgba(190,215,245,.22),transparent 55%),
+  linear-gradient(171deg,transparent 42%,rgba(244,248,255,.16) 46%,rgba(244,248,255,.9) 48%,rgba(244,248,255,.16) 50%,transparent 54%)}
+body[data-night] .hero--sub::after{content:"";position:absolute;right:-4%;bottom:-14%;width:min(46vw,460px);aspect-ratio:1/1;z-index:0;pointer-events:none;background:var(--blue);opacity:.5;
+  -webkit-mask:url('../assets/arena/star.svg') center/contain no-repeat;mask:url('../assets/arena/star.svg') center/contain no-repeat;
+  animation:starspin 90s linear infinite}
+@media (prefers-reduced-motion:reduce){body[data-night] .hero--sub::after{animation:none}}
+body[data-night] .hero--sub .wrap{position:relative;z-index:1}
+
+/* keep the gold moments bright */
+body[data-night] .section--gold{color:var(--ink)}
+body[data-night] .section--gold .imgph{background:repeating-linear-gradient(45deg,rgba(0,0,0,.05) 0 12px,transparent 12px 24px),var(--grey);color:var(--ink);border-color:rgba(25,28,31,.3)}
