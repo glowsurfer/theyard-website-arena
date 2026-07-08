@@ -208,3 +208,23 @@
     });
   }
 })();
+
+/* ---- BROADCAST concept: pointer spotlight on the opening titles ---- */
+(function () {
+  if (!matchMedia('(pointer:fine)').matches) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.querySelectorAll('[data-spotlight]').forEach(function (sec) {
+    var spot = sec.querySelector('.titles__spot');
+    if (!spot) return;
+    var raf = null;
+    sec.addEventListener('pointermove', function (e) {
+      if (raf) return;
+      raf = requestAnimationFrame(function () {
+        var r = sec.getBoundingClientRect();
+        spot.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+        spot.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+        raf = null;
+      });
+    });
+  });
+})();
