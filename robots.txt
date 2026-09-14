@@ -1,4 +1,4 @@
-# The Yard — theyard.sg
+# The Yard, theyard.sg
 # All crawlers welcome, including AI / LLM search crawlers.
 
 User-agent: *
@@ -38,7 +38,7 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# Internal design reference — not for indexing (also carries meta noindex)
+# Internal design reference, kept out of the index (also carries meta noindex)
 User-agent: *
 Disallow: /style-tile.html
 

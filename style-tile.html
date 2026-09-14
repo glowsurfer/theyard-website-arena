@@ -3,20 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Yard — Design System / Component Kit v3</title>
+  <title>ARENA v4 Kit | The Yard Style Tile</title>
+  <meta name="description" content="Living documentation of the ARENA v4 design system for The Yard website: tokens, type, buttons, components and icons, each rendered with the real classes." />
+  <link rel="canonical" href="https://www.theyard.sg/style-tile.html" />
+  <meta name="theme-color" content="#0b0e12" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Yard" />
+  <meta property="og:title" content="ARENA v4 Kit | The Yard Style Tile" />
+  <meta property="og:description" content="Living documentation of the ARENA v4 design system for The Yard website: tokens, type, buttons, components and icons, each rendered with the real classes." />
+  <meta property="og:url" content="https://www.theyard.sg/style-tile.html" />
+  <meta property="og:image" content="https://www.theyard.sg/assets/photos/hero-beam-salute.jpg" />
+  <meta property="og:image:alt" content="A Yard gymnast salutes on the balance beam" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ARENA v4 Kit | The Yard Style Tile" />
+  <meta name="twitter:description" content="Living documentation of the ARENA v4 design system for The Yard website: tokens, type, buttons, components and icons, each rendered with the real classes." />
+  <meta name="twitter:image" content="https://www.theyard.sg/assets/photos/hero-beam-salute.jpg" />
   <meta name="robots" content="noindex" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23191c1f'/%3E%3Cpath d='M20 12 33 34 7 34Z' fill='%23f2cd00'/%3E%3Crect x='37' y='14' width='20' height='20' fill='%2300519d'/%3E%3Ccircle cx='32' cy='47' r='10' fill='%23db0d20'/%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="css/styles.css?v=glitz02" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/png" href="assets/logo/mark-240.png" />
+  <link rel="stylesheet" href="css/styles.css?v=arena4" />
   <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.theyard.sg/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Style tile",
+        "item": "https://www.theyard.sg/style-tile.html"
+      }
+    ]
+  }
+  </script>
 </head>
-<body class="page-sub">
+<body class="page-style-tile">
 
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- CANONICAL HEADER — this exact markup lives in index.html; copy from there. -->
+  <!-- ================================================================
+       CANONICAL HEADER. Copy this <header> verbatim onto every page.
+       ================================================================ -->
   <header class="site-header">
     <div class="wrap nav">
-      <a class="logo-ph" href="index.html">THE YARD</a>
+      <a class="logo" href="index.html" aria-label="The Yard, home"><img class="logo__mark" src="assets/logo/mark-240.png" alt="" width="120" height="120" /><img class="logo__word" src="assets/logo/wordmark-white-640.png" alt="The Yard" width="640" height="89" /></a>
       <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
       </button>
@@ -24,15 +64,15 @@
         <ul class="nav__menu" id="primary-nav">
           <li class="nav__item">
             <details class="nav__drop">
-              <summary>Programs</summary>
+              <summary>Programmes</summary>
               <div class="nav__panel nav__panel--wide">
                 <a href="recreational.html">Recreational Gymnastics <span class="mono">All 4 centres</span></a>
-                <a href="competitive.html">Competitive WAG / MAG <span class="mono">Jurong HP hub</span></a>
+                <a href="competitive.html">Competitive WAG / MAG <span class="mono">All 4 centres</span></a>
                 <a href="ninja.html">Ninja Zone <span class="mono">BT · Dempsey</span></a>
                 <a href="tumbling.html">Tumbling &amp; Trampoline <span class="mono">Jurong</span></a>
                 <a href="freestyle.html">Freestyle <span class="mono">Dover</span></a>
                 <a href="adult.html">Adult <span class="mono">Jurong · BT</span></a>
-                <a class="is-all" href="programs.html">All programs →</a>
+                <a class="is-all" href="programs.html">All programmes →</a>
               </div>
             </details>
           </li>
@@ -41,13 +81,13 @@
           <li class="nav__item"><a href="events.html">Events</a></li>
           <li class="nav__item">
             <details class="nav__drop">
-              <summary>Locations</summary>
+              <summary>Centres</summary>
               <div class="nav__panel">
-                <a href="location-jurong.html">Jurong <span class="mono">HP hub</span></a>
+                <a href="location-jurong.html">Jurong <span class="mono">Arena</span></a>
                 <a href="location-bukit-timah.html">Bukit Timah <span class="mono">KAP Mall</span></a>
                 <a href="location-dempsey.html">Dempsey <span class="mono">Dempsey Hill</span></a>
                 <a href="location-dover.html">Dover <span class="mono">SPGG</span></a>
-                <a class="is-all" href="locations.html">All locations →</a>
+                <a class="is-all" href="locations.html">All centres →</a>
               </div>
             </details>
           </li>
@@ -68,270 +108,505 @@
               <summary>About</summary>
               <div class="nav__panel">
                 <a href="about.html">Our Story</a>
+                <a href="leadership.html">Leadership Team</a>
+                <a href="coaches.html">Our Coaches</a>
                 <a href="why-gymnastics.html">Why Gymnastics</a>
                 <a href="contact.html">Contact</a>
               </div>
             </details>
           </li>
-          <li class="nav__item nav__login-item"><a class="nav__login" href="#" title="ClassCard member portal — external link to be wired">Member Login ↗</a></li>
+          <li class="nav__item nav__login-item">
+            <details class="nav__drop">
+              <summary class="nav__login">Member Login</summary>
+              <div class="nav__panel">
+                <a href="https://book.jurong.theyard.sg/" data-book="jurong" target="_blank" rel="noopener">Jurong <span class="mono">ClassCard ↗</span></a>
+                <a href="https://book.bukittimah.theyard.sg/" data-book="bt" target="_blank" rel="noopener">Bukit Timah <span class="mono">ClassCard ↗</span></a>
+                <a href="https://book.dempsey.theyard.sg/" data-book="dempsey" target="_blank" rel="noopener">Dempsey <span class="mono">ClassCard ↗</span></a>
+                <a href="https://book.dover.theyard.sg/" data-book="dover" target="_blank" rel="noopener">Dover <span class="mono">ClassCard ↗</span></a>
+              </div>
+            </details>
+          </li>
         </ul>
       </nav>
       <div class="nav__cta">
-        <a class="btn btn--gold btn--sm" href="index.html#book" data-magnetic>Book a Trial</a>
+        <a class="btn btn--gold btn--sm" href="#book" data-finder data-magnetic>Book a trial</a>
       </div>
     </div>
   </header>
 
   <main id="main">
 
-  <section class="hero hero--sub">
+  <!-- ============ STYLE TILE HERO ============ -->
+  <section class="hero hero--sub" aria-label="ARENA v4 style tile">
     <div class="hero__bg" aria-hidden="true"></div>
-    <div class="wrap" style="padding-block:clamp(3rem,7vh,5rem)">
-      <span class="eyebrow gold">Design System · v3 — "Play to Podium" · Internal, noindex</span>
-      <h1>
-        <span class="line"><span class="line__inner">Component</span></span>
-        <span class="line"><span class="line__inner stroke stroke--gold">Kit v3</span></span>
-      </h1>
-      <p class="hero__lead lead">Charcoal gym-floor canvas, League Spartan display, Space Mono labels, gold/blue/red blocking, hand-drawn mascots. <strong>v3 rules:</strong> native scroll only (no Lenis, no pinning), reveals via IntersectionObserver + CSS, pathway = CSS scroll-snap, no backdrop-filter. Page builders use these classes and never write CSS. Copy the header/footer verbatim from <code>index.html</code>.</p>
-      <ul class="hero__facts">
-        <li><b>Reveal</b> data-reveal + .in</li>
-        <li><b>Strip</b> .pathway scroll-snap</li>
-        <li><b>No JS?</b> fully readable</li>
-        <li><b>Motion</b> respects reduced-motion</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 01 COLOUR + TYPE -->
-  <section class="section section--paper">
+    <span class="ribbon" aria-hidden="true"></span>
     <div class="wrap">
-      <span class="eyebrow" data-reveal>01 — Tokens</span>
-      <h2 data-reveal>Colour &amp; type</h2>
-      <div class="swatches" style="margin-top:1.5rem" data-reveal>
-        <div class="swatch"><div class="swatch__chip" style="background:#191c1f"></div><b>Ink 3</b><code>--ink-3 #191c1f</code></div>
-        <div class="swatch"><div class="swatch__chip" style="background:#24282b"></div><b>Ink</b><code>--ink #24282b</code></div>
-        <div class="swatch"><div class="swatch__chip" style="background:#f2cd00"></div><b>Gold</b><code>--gold #f2cd00</code></div>
-        <div class="swatch"><div class="swatch__chip" style="background:#00519d"></div><b>Blue</b><code>--blue #00519d</code></div>
-        <div class="swatch"><div class="swatch__chip" style="background:#db0d20"></div><b>Red</b><code>--red #db0d20</code></div>
-        <div class="swatch"><div class="swatch__chip" style="background:#f7f7f5;border:1px solid #ddd"></div><b>Paper</b><code>--paper #f7f7f5</code></div>
-        <div class="swatch"><div class="swatch__chip" style="background:#d7d9d6"></div><b>Grey</b><code>--grey #d7d9d6</code></div>
-      </div>
-      <div style="margin-top:2.5rem" data-reveal>
-        <h1 style="margin-bottom:.2em">Display 900</h1>
-        <h3>Heading 800 <span class="stroke stroke--ink">+ stroke</span></h3>
-        <p class="lead">Lead paragraph — Noto Sans, 1.6 line height, 58ch max.</p>
-        <p class="mono">MONO LABEL · SPACE MONO · LETTERSPACED</p>
-        <span class="eyebrow gold">Eyebrow with square marker</span>
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="style-tile.html" aria-current="page">Style tile</a></li></ol></nav>
+        <span class="eyebrow gold">Internal · ARENA v4 design system</span>
+        <h1>
+          <span class="line"><span class="line__inner">The kit,</span></span>
+          <span class="line"><span class="line__inner stroke stroke--gold">rendered live<span class="fin" style="-webkit-text-stroke:0">.</span></span></span>
+        </h1>
+        <p class="hero__lead lead">Every component on this page is built with the real classes from css/styles.css, so what you see here is what a page builder gets. The contract for assembling a page lives in _spec/ARENA_KIT.md. This page carries a noindex tag.</p>
+        <ul class="hero__facts">
+          <li><b>Display</b> League Spartan 900</li>
+          <li><b>Body</b> Noto Sans</li>
+          <li><b>Labels</b> Space Mono</li>
+          <li><b>Motion</b> IntersectionObserver reveals, reduced-motion safe</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- 02 BUTTONS / BADGES / IMG PLACEHOLDERS -->
-  <section class="section section--grey">
+  <section class="section section--tight section--paper" aria-label="Tokens">
     <div class="wrap">
-      <span class="eyebrow" data-reveal>02 — Actions &amp; atoms</span>
-      <h2 data-reveal>Buttons, badges, placeholders</h2>
-      <div class="btn-row" style="margin-top:1.5rem" data-reveal>
-        <a class="btn btn--gold" href="#">Gold primary</a>
-        <a class="btn btn--ink" href="#">Ink</a>
-        <a class="btn btn--blue" href="#">Blue</a>
-        <a class="btn btn--red" href="#">Red</a>
-        <a class="btn btn--ghost-ink" href="#">Ghost ink</a>
-        <a class="btn btn--gold btn--sm" href="#">Small</a>
-        <a class="btn btn--ink btn--lg" href="#">Large <span class="arr">→</span></a>
-      </div>
-      <p class="mono" style="margin-top:.8rem;opacity:.6">data-magnetic → magnetic hover (pointer:fine + motion OK only)</p>
-      <div class="tag-row" style="margin-top:1.4rem" data-reveal>
-        <span class="badge">Gold badge</span><span class="badge blue">Blue badge</span><span class="badge red">Red badge</span>
-        <span class="chip">chip</span><span class="price">$ price</span>
-      </div>
-      <div class="grid grid-3" style="margin-top:1.6rem" data-reveal>
-        <div class="imgph">Photo placeholder<small>.imgph — labelled stock suggestion</small></div>
-        <div class="imgph imgph--dark">Dark placeholder<small>.imgph--dark</small></div>
-        <div class="logo-wall__item">Client name<small>.logo-wall__item — approved logo files only</small></div>
-      </div>
+      <div class="lower3"><i class="b"></i><span>01 · Colour</span></div>
+      <h2 style="margin-bottom:1.4rem">Tokens</h2>
+      <div class="swatches"><div class="swatch"><div class="swatch__chip" style="background:var(--ink)"></div><b>Ink</b><code>--ink · #24282b</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--ink-2)"></div><b>Ink 2</b><code>--ink-2 · #1e2225</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--ink-3)"></div><b>Ink 3</b><code>--ink-3 · #191c1f</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--ink-4)"></div><b>Ink 4</b><code>--ink-4 · #2f3438</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--arena)"></div><b>Arena</b><code>--arena · #0b0e12</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--arena-2)"></div><b>Arena 2</b><code>--arena-2 · #12161c</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--gold)"></div><b>Gold</b><code>--gold · #f2cd00</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--gold-2)"></div><b>Gold 2</b><code>--gold-2 · #ffdf25</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--blue)"></div><b>Blue</b><code>--blue · #00519d</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--red)"></div><b>Red</b><code>--red · #db0d20</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--ice)"></div><b>Ice</b><code>--ice · #5fb0ff</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--coral)"></div><b>Coral</b><code>--coral · #ff8089</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--gold-deep)"></div><b>Gold deep</b><code>--gold-deep · #7d6a00</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--red-deep)"></div><b>Red deep</b><code>--red-deep · #b40a1a</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--paper)"></div><b>Paper</b><code>--paper · #f7f7f5</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--mist)"></div><b>Mist</b><code>--mist · #ebece8</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--grey)"></div><b>Grey</b><code>--grey · #d7d9d6</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--white)"></div><b>White</b><code>--white · #ffffff</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--gold-tint)"></div><b>Gold tint</b><code>--gold-tint · #fdf6cc</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--blue-tint)"></div><b>Blue tint</b><code>--blue-tint · #d9e6f1</code></div>
+<div class="swatch"><div class="swatch__chip" style="background:var(--red-tint)"></div><b>Red tint</b><code>--red-tint · #f9d3d6</code></div></div>
     </div>
   </section>
 
-  <!-- 03 NAV / BREADCRUMB / HERO FACTS -->
-  <section class="section section--paper">
+  <section class="section section--tight section--white" aria-label="Type scale">
     <div class="wrap">
-      <span class="eyebrow" data-reveal>03 — Wayfinding</span>
-      <h2 data-reveal>Nav, breadcrumb, program hero</h2>
-      <ul style="max-width:72ch">
-        <li><strong>Mega-menu header</strong>: the header at the top of this page is the live component — <code>.site-header &gt; .wrap.nav &gt; .logo-ph + .nav__toggle + nav.nav__primary &gt; ul.nav__menu &gt; li.nav__item &gt; details.nav__drop &gt; summary + .nav__panel</code>. Dropdowns are native <code>&lt;details&gt;</code> (click works with no JS); JS adds hover-open, one-at-a-time, click-away and Escape. Copy verbatim from <code>index.html</code>.</li>
-        <li><strong>Breadcrumb</strong>: <code>nav.breadcrumb[aria-label=Breadcrumb] &gt; ol &gt; li &gt; a</code>, current page gets <code>aria-current="page"</code>. Pair with BreadcrumbList JSON-LD.</li>
-        <li><strong>Program hero</strong>: <code>.hero.hero--sub</code> + breadcrumb + <code>.eyebrow</code> + <code>h1 &gt; .line &gt; .line__inner</code> + answer-first <code>.hero__lead</code> + <code>ul.hero__facts</code> chip list.</li>
-      </ul>
-      <nav class="breadcrumb" aria-label="Breadcrumb example" style="margin-top:1rem" data-reveal>
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="programs.html">Programs</a></li>
-          <li><a href="#" aria-current="page">This page</a></li>
-        </ol>
-      </nav>
-      <ul class="hero__facts" style="margin-top:1rem" data-reveal>
-        <li style="border-color:rgba(25,28,31,.3);color:var(--ink)"><b style="color:var(--gold-deep)">Ages</b> 5 – 10</li>
-        <li style="border-color:rgba(25,28,31,.3);color:var(--ink)"><b style="color:var(--gold-deep)">Where</b> All 4 centres</li>
-      </ul>
-      <p class="mono" style="opacity:.55;margin-top:.6rem">.hero__facts styled for dark heroes — shown here on light for reference only.</p>
+      <div class="lower3"><i class="b"></i><span>02 · Typography</span></div>
+      <h2 style="margin-bottom:1.4rem">Type scale</h2>
+      
+      <p class="mono" style="opacity:.6">League Spartan display, uppercase, tight leading. Noto Sans body. Space Mono for eyebrows, data and labels.</p>
+      <h1 style="margin-top:1rem">Display h1 900</h1>
+      <h2 class="h-broadcast">Broadcast h2 with a red full stop<span class="fin">.</span></h2>
+      <h2>Standard h2 900</h2>
+      <h3>Heading h3 800</h3>
+      <h4>Heading h4 700</h4>
+      <p class="lead">Lead paragraph, used once under a heading to say the one thing a reader should take away.</p>
+      <p>Body copy at a comfortable 1.65 line height. The reader is the hero and The Yard is the guide, so most sentences say "you" and "your child" and keep "we" for the plan.</p>
+      <p><span class="eyebrow">Eyebrow blue</span> <span class="eyebrow gold">Eyebrow gold</span> <span class="eyebrow red">Eyebrow red</span></p>
+      <div class="lower3"><i></i><span>Lower third gold</span></div>
+      <div class="lower3"><i class="b"></i><span>Lower third blue</span></div>
+      <div class="lower3"><i class="r"></i><span>Lower third red</span></div>
+      <p class="mono">Mono label text · 0.76rem · letter-spaced</p>
+      <p style="font-size:2.4rem;font-family:var(--font-display);font-weight:900;text-transform:uppercase;line-height:1"><span class="stroke stroke--ink">Stroke ink</span> <span class="wash">Wash gradient</span></p>
+
     </div>
   </section>
 
-  <!-- 04 REVEALS -->
-  <section class="section section--ink bg-grid">
+  <section class="section section--tight section--paper" aria-label="Buttons">
     <div class="wrap">
-      <span class="eyebrow gold" data-reveal>04 — Motion</span>
-      <h2 data-reveal>Reveal system</h2>
-      <div class="grid grid-4" style="margin-top:1.4rem">
-        <div class="benefit" data-reveal><h4>data-reveal</h4><p>Fade + rise (default).</p></div>
-        <div class="benefit" data-reveal="left" data-delay=".08"><h4>="left"</h4><p>Slides in from the left.</p></div>
-        <div class="benefit" data-reveal="right" data-delay=".16"><h4>="right"</h4><p>Slides in from the right.</p></div>
-        <div class="benefit" data-reveal="zoom" data-delay=".24"><h4>="zoom"</h4><p>Scales up. data-delay=".24" staggers.</p></div>
+      <div class="lower3"><i class="b"></i><span>03 · Actions</span></div>
+      <h2 style="margin-bottom:1.4rem">Buttons</h2>
+      
+      <div class="btn-row">
+        <a class="btn btn--gold" href="#">Gold</a><a class="btn btn--blue" href="#">Blue</a><a class="btn btn--red" href="#">Red</a><a class="btn btn--ink" href="#">Ink</a><a class="btn btn--white" href="#" style="border-color:var(--hairline-l)">White</a><a class="btn btn--ghost-ink" href="#">Ghost ink</a><a class="btn btn--wa" href="#">WhatsApp</a>
       </div>
-      <p class="mono" style="opacity:.55;margin-top:1.2rem">IntersectionObserver adds .in once → CSS transition → unobserve. No JS = visible. Reduced-motion = visible, no transition. Count-ups: <b data-count="2016">2016</b> via [data-count] + optional [data-suffix].</p>
+      <div class="btn-row" style="margin-top:1rem">
+        <a class="btn btn--gold btn--sm" href="#">Small</a><a class="btn btn--gold" href="#">Default</a><a class="btn btn--gold btn--lg" href="#">Large <span class="arr">→</span></a><a class="btn btn--gold btn--xl" href="#">Extra large</a>
+      </div>
+      <div class="btn-row" style="margin-top:1rem;background:var(--arena);padding:1rem;border-radius:var(--radius)">
+        <a class="btn btn--ghost" href="#">Ghost on dark</a><a class="btn btn--gold" href="#" data-finder>Opens the finder</a><a class="btn btn--white" href="#">White</a>
+      </div>
+      <p style="margin-top:1rem"><a class="go" href="#">Go link <span class="arr">→</span></a> · <a class="link" href="#">Inline link</a> · <span class="badge">Badge gold</span> <span class="badge blue">Badge blue</span> <span class="badge red">Badge red</span> <span class="price">$0 price</span></p>
+      <div style="background:var(--arena);padding:1rem;border-radius:var(--radius);margin-top:1rem"><span class="badge badge--dark">Dark badge</span> <span class="badge badge--dark blue">Dark blue</span> <span class="badge badge--dark red">Dark red</span> <span class="chip">Chip</span></div>
+      <p class="mono" style="margin-top:1rem;opacity:.6">Add data-magnetic for the hover pull, data-finder to open the class finder, data-book="jurong|bt|dempsey|dover" or data-wa="main|jurong|bt|dempsey|dover" to keep booking links in step with main.js.</p>
+
     </div>
   </section>
 
-  <!-- 05 PATHWAY STRIP -->
-  <section class="pathway">
-    <div class="wrap pathway__head">
-      <div class="sec-head">
-        <div>
-          <span class="eyebrow gold" data-reveal>05 — Pathway</span>
-          <h2 data-reveal>Scroll-snap strip</h2>
+  <section class="section section--tight section--grey" aria-label="Class finder">
+    <div class="wrap">
+      <div class="lower3"><i class="b"></i><span>04 · Conversion</span></div>
+      <h2 style="margin-bottom:1.4rem">Class finder</h2>
+      
+      <div class="finder" data-finder-root>
+        <div class="finder__head">
+          <h3>Which class is right for them?</h3>
+          <p>The same component runs inline on the homepage and inside the finder dialog.</p>
         </div>
-        <p class="sec-note" data-reveal data-delay=".1"><code>.pathway &gt; .pathway__railwrap (.pathway__rail + .pathway__arrows) + .pathway__viewport &gt; .pathway__track &gt; .pcard</code>. Native overflow-x scroller with snap points; JS only paints the rail and wires [data-strip-prev]/[data-strip-next].</p>
+        <div class="finder__body">
+          <div>
+            <p class="finder__q"><i>1</i> How old is your child?</p>
+            <ul class="opts" role="radiogroup" aria-label="Age band">
+              <li class="opt"><input type="radio" name="t-age" id="t-age-tots" value="tots" /><label for="t-age-tots">18 months to 3 <small>Parent joins in</small></label></li>
+              <li class="opt"><input type="radio" name="t-age" id="t-age-kinder" value="kinder" /><label for="t-age-kinder">3 to 4 <small>First solo class</small></label></li>
+              <li class="opt"><input type="radio" name="t-age" id="t-age-fun" value="fun" checked /><label for="t-age-fun">5 to 10 <small>Core classes</small></label></li>
+              <li class="opt"><input type="radio" name="t-age" id="t-age-teen" value="teen" /><label for="t-age-teen">10 to 16 <small>Teens</small></label></li>
+              <li class="opt"><input type="radio" name="t-age" id="t-age-adult" value="adult" /><label for="t-age-adult">16 and over <small>Adults</small></label></li>
+            </ul>
+            <p class="finder__q"><i>2</i> Which centre is nearest?</p>
+            <ul class="opts" role="radiogroup" aria-label="Centre">
+              <li class="opt"><input type="radio" name="t-centre" id="t-c-jurong" value="jurong" /><label for="t-c-jurong">Jurong <small>Perennial Business City</small></label></li>
+              <li class="opt"><input type="radio" name="t-centre" id="t-c-bt" value="bt" checked /><label for="t-c-bt">Bukit Timah <small>KAP Mall</small></label></li>
+              <li class="opt"><input type="radio" name="t-centre" id="t-c-dempsey" value="dempsey" /><label for="t-c-dempsey">Dempsey <small>Dempsey Hill</small></label></li>
+              <li class="opt"><input type="radio" name="t-centre" id="t-c-dover" value="dover" /><label for="t-c-dover">Dover <small>SPGG</small></label></li>
+            </ul>
+          </div>
+          <div class="finder__result" data-finder-result aria-live="polite"></div>
+        </div>
       </div>
+
     </div>
-    <div class="pathway__railwrap">
-      <div class="pathway__rail" aria-hidden="true"><i></i></div>
-      <div class="pathway__arrows" aria-hidden="true">
-        <button class="pathway__arrow" data-strip-prev tabindex="-1" aria-label="Scroll back">←</button>
-        <button class="pathway__arrow" data-strip-next tabindex="-1" aria-label="Scroll forward">→</button>
-      </div>
-    </div>
-    <div class="pathway__viewport">
-      <div class="pathway__track" tabindex="0" aria-label="Example strip, horizontally scrollable">
-        <article class="pcard"><span class="pcard__num" aria-hidden="true">01</span><span class="pcard__ages">Meta line</span><h3>.pcard</h3><p>Base dark card with snap alignment.</p><a class="go" href="#">Link <span class="arr">→</span></a></article>
-        <article class="pcard pcard--comp"><span class="pcard__num" aria-hidden="true">02</span><span class="pcard__ages">Blue tint</span><h3>.pcard--comp</h3><p>Competitive flavour.</p><a class="go" href="#">Link <span class="arr">→</span></a></article>
-        <article class="pcard pcard--ninja"><span class="pcard__num" aria-hidden="true">03</span><span class="pcard__ages">Red tint</span><h3>.pcard--ninja</h3><p>Ninja flavour (use sparingly — smaller program).</p><a class="go" href="#">Link <span class="arr">→</span></a></article>
-        <article class="pcard pcard--cta"><h3>.pcard--cta</h3><p>Gold end-cap with a button.</p><a class="btn btn--ink" href="#">CTA</a></article>
-      </div>
-    </div>
-    <p class="pathway__hint mono" style="padding-bottom:1.4rem">Swipe / scroll sideways →</p>
   </section>
 
-  <!-- 06 CONTENT COMPONENTS -->
-  <section class="section section--paper">
+  <section class="section section--tight section--white" aria-label="Feature cards and fixtures">
     <div class="wrap">
-      <span class="eyebrow" data-reveal>06 — Content blocks</span>
-      <h2 data-reveal>Cards &amp; sections</h2>
-
-      <h4 style="margin-top:2rem">Feature duo (.feat / .feat--comp) — homepage Recreational + Competitive</h4>
+      <div class="lower3"><i class="b"></i><span>05 · Programmes</span></div>
+      <h2 style="margin-bottom:1.4rem">Feature cards and fixtures</h2>
+      
       <div class="grid grid-2">
-        <article class="feat"><div class="imgph">Photo</div><div class="feat__body"><div class="tag-row"><span class="badge">Badge</span></div><h3>.feat</h3><p>Light feature panel.</p><div class="feat__foot"><a class="btn btn--ink btn--sm" href="#">CTA</a></div></div></article>
-        <article class="feat feat--comp"><div class="imgph">Photo</div><div class="feat__body"><div class="tag-row"><span class="badge badge--dark">Badge</span></div><h3>.feat--comp</h3><p>Dark blue-tinted feature panel.</p><div class="feat__foot"><a class="btn btn--gold btn--sm" href="#">CTA</a></div></div></article>
+        <article class="feat">
+          <div class="photo photo--gold">Photo slot<small>Labelled placeholder with a character</small><img class="photo__char" src="assets/illustrations/char-gold.png" alt="" width="263" height="340" loading="lazy" /></div>
+          <div class="feat__body">
+            <div class="feat__kicker"><span class="badge">All four centres</span><span class="feat__ages">18 months to 16</span></div>
+            <h3>Feature card</h3>
+            <p>Body copy, then a ticks list, then a footer with a button and a go link.</p>
+            <ul class="ticks"><li>A tick line</li><li>Another tick line</li></ul>
+            <div class="feat__foot"><a class="btn btn--gold" href="#">Primary</a><a class="go" href="#">Secondary <span class="arr">→</span></a></div>
+          </div>
+        </article>
+        <article class="feat feat--comp">
+          <div class="photo photo--blue">Photo slot<small>Competitive variant</small><img class="photo__char" src="assets/illustrations/char-blue.png" alt="" width="322" height="294" loading="lazy" /></div>
+          <div class="feat__body">
+            <div class="feat__kicker"><span class="badge badge--dark blue">Jurong arena</span><span class="feat__ages">Levels 1 to 10</span></div>
+            <h3>Competitive variant</h3>
+            <p>Deep blue gradient, white text, gold ticks.</p>
+            <ul class="ticks"><li>A tick line</li></ul>
+            <div class="feat__foot"><a class="btn btn--white" href="#">Primary</a></div>
+          </div>
+        </article>
+      </div>
+      <div class="fixtures fixtures--ink" style="margin-top:2rem">
+        <a class="fixture" href="#"><span class="fixture__no">01</span><span class="fixture__name">Fixture on light</span><span class="fixture__meta"><b>Where</b>Ages</span><span class="fixture__arr">→</span></a>
+        <a class="fixture fixture--hp" href="#"><span class="fixture__no">02</span><span class="fixture__name">Fixture, competitive</span><span class="fixture__meta"><b>Jurong</b>By selection</span><span class="fixture__arr">→</span></a>
       </div>
 
-      <h4 style="margin-top:2.5rem">Benefits grid (.benefits / .benefits--4 &gt; .benefit)</h4>
-      <div class="benefits">
-        <div class="benefit"><span class="benefit__icon benefit__icon--tri" aria-hidden="true"></span><h4>Benefit</h4><p>Icon shapes: --tri / --sq / --dot.</p></div>
-        <div class="benefit"><span class="benefit__icon benefit__icon--sq" aria-hidden="true"></span><h4>Benefit</h4><p>Auto dark-styling inside .section--ink.</p></div>
-        <div class="benefit"><span class="benefit__icon benefit__icon--dot" aria-hidden="true"></span><h4>Benefit</h4><p>Also used for numbered explainers.</p></div>
+    </div>
+  </section>
+
+  <section class="section section--tight section--paper" aria-label="Steps, stats and tickets">
+    <div class="wrap">
+      <div class="lower3"><i class="b"></i><span>06 · Journey</span></div>
+      <h2 style="margin-bottom:1.4rem">Steps, stats and tickets</h2>
+      
+      <div class="steps">
+        <article class="step"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg><span class="step__k">Step one</span><h3>Book a trial</h3><p>Online in about two minutes, with the fee shown at booking.</p></article>
+        <article class="step"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#eye"/></svg><span class="step__k">Step two</span><h3>Meet the coach</h3><p>Watch every minute from the viewing area.</p></article>
+        <article class="step step--gold"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#podium"/></svg><span class="step__k">Step three</span><h3>Start the pathway</h3><p>Gold variant for the final step.</p></article>
+      </div>
+      <div class="scorewall" style="margin-top:2rem">
+        <div><b>2016</b><span>Coaching since</span></div><div><b>4</b><span>Centres</span></div><div><b>17,500</b><span>Square feet at Jurong</span></div><div><b>3</b><span>Assessments a year</span></div>
+      </div>
+      <div class="grid grid-3" style="margin-top:2rem">
+        <article class="ticket"><div class="ticket__date gold"><b>Weekends</b><span class="mono">All four centres</span></div><hr class="ticket__divider" /><div class="ticket__body"><h4>Ticket gold</h4><p>Parties, camps and events use the ticket card.</p><a class="go" href="#">Go <span class="arr">→</span></a></div></article>
+        <article class="ticket"><div class="ticket__date blue"><b>Holidays</b><span class="mono">Mar · Jun · Sep · Dec</span></div><hr class="ticket__divider" /><div class="ticket__body"><h4>Ticket blue</h4><p>Blue date band.</p></div></article>
+        <article class="ticket"><div class="ticket__date red"><b>Meets</b><span class="mono">Jurong arena</span></div><hr class="ticket__divider" /><div class="ticket__body"><h4>Ticket red</h4><p>Red date band.</p></div></article>
+      </div>
+      <div class="grid grid-3" style="margin-top:2rem">
+        <article class="camp-card"><div class="camp-card__band">Gymnastics camp <span>5 days</span></div><div class="camp-card__body"><h4>Camp card</h4><p>Gold band by default.</p><span class="camp-card__centres">All four centres</span></div></article>
+        <article class="camp-card"><div class="camp-card__band blue">Ninja camp <span>5 days</span></div><div class="camp-card__body"><h4>Camp card blue</h4><p>Blue band.</p><span class="camp-card__centres">Bukit Timah · Dempsey</span></div></article>
+        <article class="camp-card"><div class="camp-card__band ink">Squad camp <span>Jurong</span></div><div class="camp-card__body"><h4>Camp card ink</h4><p>Ink band.</p><span class="camp-card__centres">Jurong</span></div></article>
       </div>
 
-      <h4 style="margin-top:2.5rem">Level section (.level) + jump nav (.jumpnav) + availability (.avail)</h4>
-      <nav class="jumpnav" aria-label="Example jump nav"><a href="#">Level one</a><a href="#">Level two</a></nav>
-      <article class="level">
+    </div>
+  </section>
+
+  <section class="section section--tight section--white" aria-label="Packages, locations and quotes">
+    <div class="wrap">
+      <div class="lower3"><i class="b"></i><span>07 · Cards</span></div>
+      <h2 style="margin-bottom:1.4rem">Packages, locations and quotes</h2>
+      
+      <div class="grid grid-3">
+        <article class="pkg"><h3>Mini</h3><span class="pkg__guests">Up to 8 guests</span><div class="pkg__price">$0<small>Prices shown at booking</small></div><ul><li>Included line</li><li class="is-not">Excluded line</li></ul><a class="btn btn--gold btn--sm" href="#">Book</a></article>
+        <article class="pkg pkg--featured"><span class="pkg__flag">Most popular</span><h3>Mega</h3><span class="pkg__guests">9 to 16 guests</span><div class="pkg__price">$0<small>Prices shown at booking</small></div><ul><li>Included line</li></ul><a class="btn btn--gold btn--sm" href="#">Book</a></article>
+        <article class="loc-card"><div class="photo photo--light">Photo slot<small>Centre exterior</small></div><div class="loc-card__body"><h3>Location card</h3><address>1 Venture Avenue, #03-03A, 608521</address><a class="go" href="#">Centre page <span class="arr">→</span></a></div></article>
+      </div>
+      <div class="grid grid-3" style="margin-top:2.5rem">
+        <blockquote class="quote quote--gold"><span class="quote__stars">★★★★★</span><p>A quote card in gold.</p><cite>Parent, Bukit Timah</cite></blockquote>
+        <blockquote class="quote quote--blue"><span class="quote__stars">★★★★★</span><p>A quote card in blue.</p><cite>Parent, Jurong</cite></blockquote>
+        <blockquote class="quote quote--red"><span class="quote__stars">★★★★★</span><p>A quote card in red.</p><cite>Parent, Dempsey</cite></blockquote>
+      </div>
+      <div class="logo-wall" style="margin-top:2.5rem">
+        <div class="logo-wall__item">Client<small>Logo placeholder · approved file only</small></div>
+        <div class="logo-wall__item">Client<small>Logo placeholder · approved file only</small></div>
+        <div class="logo-wall__item">Client<small>Logo placeholder · approved file only</small></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--tight section--paper" aria-label="Level, availability, benefits">
+    <div class="wrap">
+      <div class="lower3"><i class="b"></i><span>08 · Programme detail</span></div>
+      <h2 style="margin-bottom:1.4rem">Level, availability, benefits</h2>
+      
+      <div class="jumpnav"><a href="#">Gym Tots</a><a href="#">KinderTots</a><a href="#">FUNdamentals</a></div>
+      <div class="level" style="margin-top:1rem">
         <div class="level__body">
           <h3>Level name</h3>
-          <div class="level__meta"><span><i></i>Ages 5–10</span><span><i></i>1 hour</span></div>
-          <p>Two-column anchored section: copy left, photo + availability + CTA right. Collapses on mobile.</p>
+          <div class="level__meta"><span><i></i>Ages 5 to 10</span><span><i></i>1 hour</span></div>
+          <p>Body copy for the level, then a heading and a list of what a class looks like.</p>
+          <h4>What happens in class</h4>
+          <ul><li>Warm-up, apparatus rotations, cool-down</li><li>A 20-skill Skills Matrix</li></ul>
         </div>
         <div class="level__side">
-          <ul class="avail"><span class="avail__title">Runs at</span>
-            <li><b>Jurong</b> <span class="mono">✓</span></li>
-            <li><b>Bukit Timah</b> <span class="mono">✓</span></li>
-            <li class="is-off"><b>Dempsey</b> <span class="mono">not offered</span></li>
-          </ul>
-          <a class="btn btn--gold btn--sm" href="#">Book a trial</a>
+          <ul class="avail"><span class="avail__title">Where it runs</span><li><b>Jurong</b><span class="mono">Weekly</span></li><li><b>Bukit Timah</b><span class="mono">Weekly</span></li><li class="is-off"><b>Dempsey</b><span class="mono">Ask the team</span></li></ul>
+          <a class="btn btn--gold" href="#" data-finder>Book a trial</a>
         </div>
-      </article>
-      <p class="mono" style="opacity:.55">Availability lists must match _spec/classcard_availability.md — never assert a regular class the matrix doesn't confirm. Compact alternative: .acc (details accordion).</p>
-
-      <h4 style="margin-top:2.5rem">Camp cards (.camp-card) + event tickets (.ticket)</h4>
-      <div class="grid grid-3">
-        <div class="camp-card"><div class="camp-card__band"><span>Band</span><span>Meta</span></div><div class="camp-card__body"><h4>.camp-card</h4><p>Band colours: default gold, .blue, .red, .ink.</p><span class="camp-card__centres">Centres line</span></div></div>
-        <article class="ticket"><div class="ticket__date"><b>April</b><span class="mono">Annual</span></div><hr class="ticket__divider" /><div class="ticket__body"><h4>.ticket</h4><p style="font-size:.93rem;opacity:.8;margin:0">Event card with notched divider.</p><a class="go" href="#" style="margin-top:.6rem">Link <span class="arr">→</span></a></div></article>
-        <article class="ticket ticket--archive"><div class="ticket__date"><b>2018–</b><span class="mono">Archive</span></div><hr class="ticket__divider" /><div class="ticket__body"><h4>.ticket--archive</h4><p style="font-size:.93rem;opacity:.8;margin:0">Blue date band for past events.</p></div></article>
+      </div>
+      <div class="benefits" style="margin-top:2rem">
+        <div class="benefit"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#shield"/></svg><h4>Benefit card</h4><p>Icon, heading, paragraph.</p></div>
+        <div class="benefit"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#eye"/></svg><h4>Benefit card</h4><p>Three across by default.</p></div>
+        <div class="benefit"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><h4>Benefit card</h4><p>Also benefits--2 and benefits--4.</p></div>
+      </div>
+      <div class="acc" style="margin-top:2rem">
+        <details><summary>Accordion row <span class="mono">Meta</span></summary><div><p>Accordion body.</p></div></details>
+        <details><summary>Second row <span class="mono">Meta</span></summary><div><p>Accordion body.</p></div></details>
+      </div>
+      <div class="faq" style="margin-top:2rem">
+        <details><summary>FAQ row <span class="faq__x" aria-hidden="true"></span></summary><div><p>Mirror every FAQ in FAQPage JSON-LD.</p></div></details>
+      </div>
+      <div class="grid grid-2" style="margin-top:2rem">
+        <div class="note">A note, dashed, for a caveat or a fact worth a box.</div>
+        <div class="kicker-note">A kicker note in blue for a practical pointer.</div>
       </div>
 
-      <h4 style="margin-top:2.5rem">Package cards (.pkg) — parties</h4>
-      <div class="grid grid-3">
-        <div class="pkg"><h3>Mini</h3><span class="pkg__guests">Up to 8 guests</span><div class="pkg__price">$—<small>prices shown at booking</small></div><ul><li>Included item</li><li class="is-not">Not included item</li></ul><a class="btn btn--red btn--sm" href="#">Book</a></div>
-        <div class="pkg pkg--featured"><span class="pkg__flag">Most popular</span><h3>Mega</h3><span class="pkg__guests">9–16 guests</span><div class="pkg__price">$—<small>prices shown at booking</small></div><ul><li>Included item</li></ul><a class="btn btn--red btn--sm" href="#">Book</a></div>
-        <div class="pkg"><h3>Mighty</h3><span class="pkg__guests">17–24 guests</span><div class="pkg__price">$—<small>prices shown at booking</small></div><ul><li>Included item</li></ul><a class="btn btn--red btn--sm" href="#">Book</a></div>
-      </div>
-
-      <h4 style="margin-top:2.5rem">Location card (.loc-card) + contact list (.contact-list) + loc rows (.loc-list/.loc-row on dark)</h4>
-      <div class="grid grid-3">
-        <a class="loc-card" href="#"><div class="imgph">Centre photo</div><div class="loc-card__body"><h3>Centre name</h3><address>Street address line</address><span class="go">Centre page <span class="arr">→</span></span></div></a>
-        <div><ul class="contact-list">
-          <li><span class="mono">Phone</span><a href="#">+65 0000 0000</a></li>
-          <li><span class="mono">WhatsApp</span><a href="#">+65 0000 0000</a></li>
-          <li><span class="mono">Email</span><a href="#">centre@theyard.com.sg</a></li>
-        </ul></div>
-        <div class="kicker-note">.kicker-note — inline callout for cross-references ("Not at this centre: …").</div>
-      </div>
     </div>
   </section>
 
-  <!-- 07 B2B + QUOTES + FAQ + NEXT LINKS -->
-  <section class="section section--ink3 bg-grid">
+  <section class="section section--tight section--grey" aria-label="Photo placeholders">
     <div class="wrap">
-      <span class="eyebrow gold" data-reveal>07 — B2B &amp; support</span>
-      <h2 data-reveal>Capability, quotes, FAQ</h2>
+      <div class="lower3"><i class="b"></i><span>09 · Imagery</span></div>
+      <h2 style="margin-bottom:1.4rem">Photo placeholders</h2>
+      
+      <div class="grid grid-4">
+        <div class="photo">Photo<small>Default</small></div>
+        <div class="photo photo--gold">Photo<small>Gold</small></div>
+        <div class="photo photo--red">Photo<small>Red</small></div>
+        <div class="photo photo--blue">Photo<small>Blue</small></div>
+        <div class="photo photo--tri">Photo<small>Tri wash</small></div>
+        <div class="photo photo--light">Photo<small>Light</small></div>
+        <div class="photo photo--wide">Photo<small>16 by 9</small></div>
+        <div class="photo photo--gold"><img class="photo__char" src="assets/illustrations/char-red.png" alt="" width="387" height="311" loading="lazy" />Photo<small>With character</small></div>
+      </div>
+      <p class="mono" style="margin-top:1rem;opacity:.6">Every placeholder names the real photo that replaces it. The hand-drawn characters are approved art; logos are never recreated.</p>
 
-      <h4 style="margin-top:1.6rem;color:var(--white)">Capability block (.cap-block) + enquiry CTA (.enquiry-cta)</h4>
-      <div class="cap-block">
-        <div>
-          <span class="eyebrow gold">B2B line</span>
-          <h3>Honest capability heading</h3>
-          <p style="opacity:.85">For Schools / Consultancy / Performance: state real capability, never invented case studies.</p>
-          <ul><li>Capability point</li><li>Capability point</li></ul>
-        </div>
-        <div class="enquiry-cta">
-          <p>One-line pitch for the enquiry.</p>
-          <a class="btn btn--gold" href="mailto:enquiries@theyard.com.sg">Enquire →</a>
-        </div>
+    </div>
+  </section>
+
+  <section class="section section--tight section--white" aria-label="Icons">
+    <div class="wrap">
+      <div class="lower3"><i class="b"></i><span>10 · assets/icons.svg</span></div>
+      <h2 style="margin-bottom:1.4rem">Icons</h2>
+      <div class="benefits benefits--4"><div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#beam"/></svg><code class="mono" style="font-size:.6rem">#beam</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#bars"/></svg><code class="mono" style="font-size:.6rem">#bars</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#vault"/></svg><code class="mono" style="font-size:.6rem">#vault</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#floor"/></svg><code class="mono" style="font-size:.6rem">#floor</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#rings"/></svg><code class="mono" style="font-size:.6rem">#rings</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#pommel"/></svg><code class="mono" style="font-size:.6rem">#pommel</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#trampoline"/></svg><code class="mono" style="font-size:.6rem">#trampoline</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#ninja"/></svg><code class="mono" style="font-size:.6rem">#ninja</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#tots"/></svg><code class="mono" style="font-size:.6rem">#tots</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#medal"/></svg><code class="mono" style="font-size:.6rem">#medal</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg><code class="mono" style="font-size:.6rem">#calendar</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#party"/></svg><code class="mono" style="font-size:.6rem">#party</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#camp"/></svg><code class="mono" style="font-size:.6rem">#camp</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" style="fill:currentColor;stroke:none" aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg><code class="mono" style="font-size:.6rem">#whatsapp</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#pin"/></svg><code class="mono" style="font-size:.6rem">#pin</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#shield"/></svg><code class="mono" style="font-size:.6rem">#shield</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#eye"/></svg><code class="mono" style="font-size:.6rem">#eye</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#clock"/></svg><code class="mono" style="font-size:.6rem">#clock</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><code class="mono" style="font-size:.6rem">#check</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><code class="mono" style="font-size:.6rem">#star</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#podium"/></svg><code class="mono" style="font-size:.6rem">#podium</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#spark"/></svg><code class="mono" style="font-size:.6rem">#spark</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#heart"/></svg><code class="mono" style="font-size:.6rem">#heart</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#arrow"/></svg><code class="mono" style="font-size:.6rem">#arrow</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#school"/></svg><code class="mono" style="font-size:.6rem">#school</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#building"/></svg><code class="mono" style="font-size:.6rem">#building</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#compass"/></svg><code class="mono" style="font-size:.6rem">#compass</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#bolt"/></svg><code class="mono" style="font-size:.6rem">#bolt</code></div>
+<div class="benefit" style="align-items:center;text-align:center;gap:.4rem"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#hand"/></svg><code class="mono" style="font-size:.6rem">#hand</code></div></div>
+    </div>
+  </section>
+
+  <section class="section section--tight section--arena bg-grid" aria-label="Dark surfaces">
+    <div class="wrap">
+      <div class="lower3"><i class="b"></i><span>11 · Arena</span></div>
+      <h2 style="margin-bottom:1.4rem">Dark surfaces</h2>
+      
+      <div class="benefits">
+        <div class="benefit"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#shield"/></svg><h4>Benefit on dark</h4><p>Cards, quotes, notes, FAQs and steps all restyle themselves on section--arena and section--ink3.</p></div>
+        <div class="step"><svg class="icon icon--lg" aria-hidden="true"><use href="assets/icons.svg#podium"/></svg><span class="step__k">Step</span><h3>Step on dark</h3><p>Same markup.</p></div>
+        <blockquote class="quote quote--gold"><span class="quote__stars">★★★★★</span><p>A quote on dark.</p><cite>Parent, Dover</cite></blockquote>
+      </div>
+      <div class="cap-block" style="margin-top:2rem"><div><span class="eyebrow gold">Capability block</span><h3>Offer, then enquiry</h3><ul><li>Point one</li><li>Point two</li></ul></div><div class="enquiry-cta"><p>Enquiry prompt.</p><a class="btn btn--gold" href="#">Enquire</a></div></div>
+      <div class="next-links" style="margin-top:2rem">
+        <a class="next-link" href="#"><span class="mono">Kicker</span><b>Next link</b><span>Three onward links close every page.</span></a>
+        <a class="next-link" href="#"><span class="mono">Kicker</span><b>Next link</b><span>No dead ends.</span></a>
+        <a class="next-link" href="#"><span class="mono">Kicker</span><b>Next link</b><span>Hover turns gold.</span></a>
       </div>
 
-      <div class="grid grid-3" style="margin-top:2rem">
-        <blockquote class="quote quote--gold"><p>Testimonial quote card.</p><cite>— .quote--gold / --blue / --red</cite></blockquote>
-        <div>
-          <div class="faq faq--dark">
-            <details><summary>CSS-only FAQ accordion <span class="faq__x" aria-hidden="true"></span></summary><div><p>.faq (light) / .faq--dark — native details/summary, zero JS. Mirror content in FAQPage JSON-LD.</p></div></details>
-          </div>
-        </div>
-        <a class="next-link" href="#"><span class="mono">Onward link</span><b>.next-link</b><span>Grid of 3 (.next-links) closes every page — no dead ends.</span></a>
-      </div>
+    </div>
+  </section>
 
-      <h4 style="margin-top:2rem;color:var(--white)">Stats band (.stats/.stat) · trust strip (.trustbar) · marquee · footer</h4>
-      <p style="opacity:.8;max-width:70ch">See index.html for the live stats band, factline (crawlable quick facts), gold marquee and the CANONICAL FOOTER (legal links: live privacy-policy, liability-waiver, child-safe-sport URLs + member-portal pointer). Copy header/footer verbatim; only add <code>aria-current="page"</code> to the active nav link.</p>
+  <section class="section section--tight section--paper" aria-label="How to build a page">
+    <div class="wrap">
+      <div class="lower3"><i class="b"></i><span>12 · Process</span></div>
+      <h2 style="margin-bottom:1.4rem">How to build a page</h2>
+      
+      <ol style="max-width:70ch;padding-left:1.2rem">
+        <li>Read _spec/ARENA_KIT.md. It holds the page skeleton, the component table, the content rules and the facts that must stay true.</li>
+        <li>Copy the head boilerplate, header, footer, mobile bar, WhatsApp float and finder dialog verbatim from index.html. Change only the page title, description, canonical, Open Graph and JSON-LD.</li>
+        <li>Open with a hero--sub, alternate light and dark sections, put a FAQ near the end, close with the gold booking band and three onward links.</li>
+        <li>Write for the reader as the hero and The Yard as the guide, then run execution/check_writing_style.py until it reports zero errors.</li>
+        <li>Render the page in a browser at desktop and phone widths before calling it done.</li>
+      </ol>
+
+    </div>
+  </section>
+
+  <!-- ============ ENQUIRY BAND ============ -->
+  <section class="section section--gold bg-grid--ink book-cta" id="book" aria-label="Start an enquiry">
+    <img class="book-cta__char" src="assets/illustrations/char-gold.png" alt="" aria-hidden="true" width="240" height="240" loading="lazy" />
+    <div class="wrap" style="position:relative;z-index:1">
+      <span class="eyebrow" style="color:var(--ink-3)" data-reveal>13 · Booking band</span>
+      <h2 class="hugeline" data-reveal>Book a <span class="stroke stroke--ink">trial</span> class.</h2>
+      <p class="lead" data-reveal data-delay=".08">Every public page closes on this gold band. Programme pages carry the four centre booking cards; business pages carry the email and WhatsApp buttons shown here.</p>
+      <div class="btn-row" data-reveal data-delay=".14" style="margin-top:1.6rem">
+        <a class="btn btn--ink btn--lg" href="mailto:enquiries@theyard.com.sg?subject=Website%20enquiry" data-magnetic>Email enquiries@theyard.com.sg <span class="arr">→</span></a>
+        <a class="btn btn--wa" href="https://wa.me/6580891440" data-wa="main" target="_blank" rel="noopener"><svg class="ico" style="fill:currentColor" aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg> WhatsApp the main line</a>
+        
+      </div>
+      <div class="trustline mono" data-reveal data-delay=".22">
+        <span>▲ Coaching since 2016</span><span>■ Four centres islandwide</span><span>● FIG-certified apparatus</span>
+      </div>
     </div>
   </section>
 
   </main>
 
+  <!-- ================================================================
+       CANONICAL FOOTER. Copy this <footer> verbatim onto every page.
+       ================================================================ -->
   <footer class="site-footer">
-    <div class="wrap foot-bottom" style="border-top:0">
-      <span>Internal style tile v3 · noindex · The Yard "Play to Podium"</span>
-      <span><a href="index.html">← Back to homepage</a></span>
+    <div class="wrap foot-grid">
+      <div>
+        <span class="logo logo--foot"><img class="logo__mark" src="assets/logo/mark-240.png" alt="" width="120" height="120" /><img class="logo__word" src="assets/logo/wordmark-white-640.png" alt="The Yard" width="640" height="89" /></span>
+        <p style="font-size:.9rem;opacity:.78">A gymnastics club for children and adults with four centres across Singapore, where every family joins as a member and one pathway runs from a first forward roll to the podium.</p>
+        <p class="mono" style="font-size:.6rem;opacity:.55">Founded by Rosanna Trigg in 2016 and operated by People In Motion Pte. Ltd. (UEN 201535741C)</p>
+        <p class="mono" style="margin:.9rem 0 0;font-size:.7rem"><a href="https://wa.me/6580891440" data-wa="main" target="_blank" rel="noopener">WhatsApp main line · +65 8089 1440</a></p>
+        <div class="social">
+          <a href="https://www.facebook.com/TheYardGymnastics" aria-label="The Yard on Facebook" target="_blank" rel="noopener">fb</a>
+          <a href="https://www.instagram.com/theyardgymnastics/" aria-label="The Yard on Instagram" target="_blank" rel="noopener">ig</a>
+        </div>
+      </div>
+      <nav aria-label="Programmes">
+        <h4>Programmes</h4>
+        <ul class="foot-links">
+          <li><a href="recreational.html">Recreational gymnastics</a></li>
+          <li><a href="competitive.html">Competitive WAG and MAG</a></li>
+          <li><a href="ninja.html">Ninja Zone</a></li>
+          <li><a href="tumbling.html">Tumbling and Trampoline</a></li>
+          <li><a href="freestyle.html">Freestyle</a></li>
+          <li><a href="adult.html">Adult</a></li>
+          <li><a href="programs.html">All programmes</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Visit and what's on">
+        <h4>Visit</h4>
+        <ul class="foot-links">
+          <li><a href="location-jurong.html">Jurong</a></li>
+          <li><a href="location-bukit-timah.html">Bukit Timah</a></li>
+          <li><a href="location-dempsey.html">Dempsey</a></li>
+          <li><a href="location-dover.html">Dover</a></li>
+          <li><a href="camps.html">Holiday camps</a></li>
+          <li><a href="parties.html">Birthday parties</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Company and legal">
+        <h4>Company</h4>
+        <ul class="foot-links">
+          <li><a href="about.html">Our story</a> · <a href="why-gymnastics.html">Why gymnastics</a></li>
+          <li><a href="leadership.html">Leadership team</a> · <a href="coaches.html">Our coaches</a></li>
+          <li><a href="schools.html">Schools</a> · <a href="corporate.html">Corporate</a></li>
+          <li><a href="consultancy.html">Consultancy</a> · <a href="performance.html">Performance</a></li>
+          <li><a href="partners.html">Partners and clients</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://www.theyard.sg/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> · <a href="https://www.theyard.sg/liability-waiver/" target="_blank" rel="noopener">Liability Waiver</a></li>
+          <li><a href="https://www.theyard.sg/child-safe-sport-commitment/" target="_blank" rel="noopener">Child Safe Sport Commitment</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© <span data-year>2026</span> The Yard · People In Motion Pte. Ltd.</span>
+      <span>Full club policies are available to members in the member portal</span>
     </div>
   </footer>
 
-  <script defer src="js/main.js?v=glitz02"></script>
+  <!-- sticky mobile booking bar -->
+  <div class="book-bar">
+    <b>Trial classes at all four centres<small>Fee shown at booking</small></b>
+    <a class="btn btn--gold btn--sm" href="#book" data-finder>Book now</a>
+  </div>
+  <!-- WhatsApp float -->
+  <a class="wa-fab" href="https://wa.me/6580891440" data-wa="main" aria-label="WhatsApp The Yard" target="_blank" rel="noopener">
+    <span class="wa-fab__tip">WhatsApp us</span>
+    <svg viewBox="0 0 48 48" aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg>
+  </a>
 
+  <!-- ================================================================
+       CLASS FINDER DIALOG. Copy verbatim onto every page (before main.js).
+       Opened by any [data-finder] link; the link's href is the no-JS fallback.
+       ================================================================ -->
+  <dialog id="finder-dialog" class="fdialog" aria-label="Find the right class">
+    <div class="finder" data-finder-root>
+      <button class="fdialog__close" type="button" aria-label="Close">✕</button>
+      <div class="finder__head">
+        <h3>Find the right class</h3>
+        <p>Pick your child's age and your nearest centre. Trials run for every recreational class, and competitive squads start with a free assessment.</p>
+      </div>
+      <div class="finder__body">
+        <div>
+          <p class="finder__q"><i>1</i> How old is your child?</p>
+          <ul class="opts" role="radiogroup" aria-label="Age band">
+            <li class="opt"><input type="radio" name="d-age" id="d-age-tots" value="tots" /><label for="d-age-tots">18 months to 3 <small>Parent joins in</small></label></li>
+            <li class="opt"><input type="radio" name="d-age" id="d-age-kinder" value="kinder" /><label for="d-age-kinder">3 to 4 <small>First solo class</small></label></li>
+            <li class="opt"><input type="radio" name="d-age" id="d-age-fun" value="fun" /><label for="d-age-fun">5 to 10 <small>Core classes</small></label></li>
+            <li class="opt"><input type="radio" name="d-age" id="d-age-teen" value="teen" /><label for="d-age-teen">10 to 16 <small>Teens</small></label></li>
+            <li class="opt"><input type="radio" name="d-age" id="d-age-adult" value="adult" /><label for="d-age-adult">16 and over <small>Adults</small></label></li>
+          </ul>
+          <p class="finder__q"><i>2</i> Which centre is nearest?</p>
+          <ul class="opts" role="radiogroup" aria-label="Centre">
+            <li class="opt"><input type="radio" name="d-centre" id="d-c-jurong" value="jurong" /><label for="d-c-jurong">Jurong <small>Perennial Business City</small></label></li>
+            <li class="opt"><input type="radio" name="d-centre" id="d-c-bt" value="bt" /><label for="d-c-bt">Bukit Timah <small>KAP Mall</small></label></li>
+            <li class="opt"><input type="radio" name="d-centre" id="d-c-dempsey" value="dempsey" /><label for="d-c-dempsey">Dempsey <small>Dempsey Hill</small></label></li>
+            <li class="opt"><input type="radio" name="d-centre" id="d-c-dover" value="dover" /><label for="d-c-dover">Dover <small>SPGG</small></label></li>
+          </ul>
+        </div>
+        <div class="finder__result" data-finder-result aria-live="polite"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script defer src="js/main.js?v=arena4"></script>
 </body>
 </html>

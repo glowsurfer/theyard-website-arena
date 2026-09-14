@@ -10,4 +10,7 @@ Thumbs.db
 *.log
 
 # Build spec / research (not part of the deployed site)
-_spec/
+_spec/*
+
+# Keep the page-builder contract in version control even though the rest of _spec is research
+!_spec/ARENA_KIT.md
