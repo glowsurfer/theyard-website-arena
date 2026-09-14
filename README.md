@@ -20,7 +20,7 @@ components.
 - Copy rewritten to the house voice: the parent or child is the hero, The Yard is the guide,
   and the six writing rules are enforced with the style checker (see Verification).
 - Availability discipline unchanged: every regular-class claim comes from
-  `theyard-website/_spec/classcard_availability.md`.
+  `_spec/classcard_availability.md`.
 
 ## Files
 

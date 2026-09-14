@@ -9,8 +9,5 @@ Thumbs.db
 # Logs / temp
 *.log
 
-# Build spec / research (not part of the deployed site)
-_spec/*
+# Build specs live in _spec/ and are tracked (the only copy since the v3 and mural drafts were retired on 2026-09-14)
 
-# Keep the page-builder contract in version control even though the rest of _spec is research
-!_spec/ARENA_KIT.md

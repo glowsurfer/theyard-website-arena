@@ -165,7 +165,7 @@ The Yard's own language, used with a light hand and never as a list:
 
 ## Facts that must stay true
 
-- Regular-class availability comes from `theyard-website/_spec/classcard_availability.md`:
+- Regular-class availability comes from `_spec/classcard_availability.md`:
   Gym Tots, KinderTots, FUNdamentals at all four; Warriors at Bukit Timah and Dover; Senior
   Warriors at Dover; boys' classes at Dempsey and Dover; Ninja Zone at Bukit Timah and
   Dempsey only; Tumbling and Trampoline at Jurong only; Adult at Jurong (Open Session) and
