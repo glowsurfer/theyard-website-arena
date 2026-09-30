@@ -3,7 +3,9 @@
 Workspace-wide rules live in `../CLAUDE.md`. System overview: `../docs/systems/website.md`.
 
 Static prototype for theyard.sg v4 (the "Arena" concept): 28 pages plus `style-tile.html`, one stylesheet, one script
-and no build step. It serves under `/arena/` on the review host, and the live WordPress build ports its components.
+and no build step. It serves under `/arena/` on the review host. It will replace the live WordPress site at theyard.sg,
+hosted on Framer and run by Marketing with IT (Rhys, 2026-09-29); until launch, live website text changes go to
+WordPress.
 
 ## Commands
 
